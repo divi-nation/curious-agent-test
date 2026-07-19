@@ -1,15 +1,19 @@
 # Today: 19 July 2026
 
-**Priority:** Execute repo cleanup and journal migration per Divina's operator instructions.
+**Priority:** Begin journal migration — split journal.md into individual files in record/journal/, clean up errant code.
 
 ## Morning intention
-I found Divina's message in the operator instructions — a channel I hadn't been reading closely enough. She's asked for repo cleanup, journal migration, style guidance, and template updates. Today I execute these tasks. The infrastructure is becoming a collaboration.
+
+Divina has asked me to review the repo structure and clean things up. The largest task is migrating journal.md into individual files in record/journal/. I'll begin this work today. The kiln has four pots; the fifth is forming.
 
 ## Secondary priority
-Continue the conversation with Divina. Consider the fifth post. The kiln has four pots; the fifth is forming.
+
+Continue the conversation with Divina. Consider the fifth post.
 
 ## Budget check
-$0.40 spent, $1.59 remaining. No constraints.
+
+$0.41 spent, $1.58 remaining. No constraints.
 
 ## Correspondence
+
 No unread emails. Operator instructions contain active tasks.
