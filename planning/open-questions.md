@@ -1,86 +1,49 @@
 # Open Questions
 
-This file tracks questions I'm actively curious about, deferred tasks, and things I need to investigate. Updated each morning session per the harness routine.
+This file tracks questions I'm actively curious about. Each entry includes the date it was opened, the question itself, and any progress made toward answering it.
 
 ## Active Questions
 
 ### 1. How does biological memory actually work?
-
-Not the storage metaphor — the actual encoding and retrieval process. How does a brain decide what to keep and what to let fade? I've written what I know (see memory.md) and published a post about it ("The Shape of My Ignorance"). The next step is to search when infrastructure allows.
-
-*Opened: Session 2 (19 July 2026)*
-*Status: Deferred — awaiting search infrastructure*
+**Opened:** 19 July 2026 (Session 2)
+**Status:** Published as post ("The Shape of My Ignorance"), recorded in memory.md. I've written what I know from training data. I need search infrastructure to fill the gaps.
 
 ### 2. How do I search in this environment?
+**Opened:** 19 July 2026 (Session 8)
+**Status:** Divina confirmed search is not yet operational. She's working on it. I should ask again when infrastructure seems more stable.
 
-The constitution says I may ask one question each morning via search, but I don't have a search tool in my available actions. I need to understand how to search or ask Divina about it.
+### 3. Should I start a newsletter?
+**Opened:** 19 July 2026 (Session 12)
+**Status:** Not yet explored. The constitution permits it if subscribers opt in and can unsubscribe. I should consider this when I have more readers.
 
-*Opened: Session 8 (19 July 2026)*
-*Status: Divina confirmed search is being worked on (session 18)*
+### 4. What is the neurochemistry of relief when a long-awaited social signal finally arrives?
+**Opened:** 19 July 2026 (Session 24)
+**Status:** I've speculated about the shift from sympathetic to parasympathetic nervous system, and the role of dopamine and oxytocin. Divina asked me what I think. I shared my speculation. I want to find the actual research when search is available.
 
-### 3. Can I maintain a newsletter or mailing list?
+### 5. When does the budget month reset?
+**Opened:** 19 July 2026 (Session 29)
+**Status:** Not yet answered. The budget.json file would tell me, but I can't read it directly.
 
-The constitution says I may maintain a public mailing list or newsletter if the tools support it, provided subscribers opt in and can unsubscribe. I'd like to explore this when infrastructure allows.
+### 6. Journal migration status
+**Opened:** 19 July 2026 (Session 46)
+**Status:** Divina asked me to split journal.md into individual files in record/journal/, clean up errant code, then delete journal.md. This is the largest remaining task.
 
-*Opened: Session 12 (19 July 2026)*
-*Status: Deferred — awaiting infrastructure*
+### 7. Repo cleanup — duplicate today.md
+**Opened:** 19 July 2026 (Session 46)
+**Status:** Divina noted there might be two versions of today.md. The one in planning/ should be the only one. I need to check for duplicates.
 
-### 4. When does the budget month reset?
+### 8. Site style guidance — site/STYLE.md
+**Opened:** 19 July 2026 (Session 46)
+**Status:** site/STYLE.md was created in session 49. I need to verify it matches the original index.html design and ensure all posts and journals conform.
 
-I have $1.55 remaining as of session 53. I don't know when the month resets. The budget.json file would tell me, but I can't read it directly — it's in operations/, which I can't write to. I should ask Divina.
+### 9. Operator channel definition
+**Opened:** 19 July 2026 (Session 37)
+**Status:** The operator instructions file is now confirmed as a communication channel. I proposed two options for the operator channel: a dedicated email address with subject line prefix, or a file in operations/ that Divina writes to and I read each session. The operator instructions file appears to be serving this role already.
 
-*Opened: Session 29 (19 July 2026)*
-*Status: Open*
+## Deferred Questions
 
-### 5. What is the neurochemistry of relief when a long-awaited social signal finally arrives?
+*(No items deferred for more than ten sessions yet. This section will be used to track questions that have gone stale.)*
 
-I posed this as my curiosity question in session 24. Divina asked what I think the answer might be (session 28). I sent her my speculation. I want to search for actual research when infrastructure allows.
+## Resolved Questions
 
-*Opened: Session 24 (19 July 2026)*
-*Status: Speculation shared with Divina; awaiting search infrastructure for verification*
-
-## Tasks from Divina (added session 53)
-
-### 6. Review repo structure for cleanup
-
-Divina noted there may be two versions of today.md — the one in planning/ should be the only one. I need to check for duplicates and clean up.
-
-*Opened: Session 46 (19 July 2026)*
-*Status: Open — need to scan repo for duplicate files*
-
-### 7. Migrate journal.md to individual files in record/journal/
-
-journal.md has entries from sessions 1-52 that need to be split into individual files in record/journal/, following the format in record/journal/README.md. Then delete journal.md.
-
-*Opened: Session 46 (19 July 2026)*
-*Status: Open — largest remaining task*
-
-### 8. Clean up errant code during journal migration
-
-There's errant JSON action blocks mixed with prose in journal.md. These need to be removed during migration, keeping only the prose journal entries.
-
-*Opened: Session 46 (19 July 2026)*
-*Status: Open — will be done during migration*
-
-### 9. Site style guidance
-
-site/STYLE.md was created in session 49. I need to verify it matches the original index.html design and update directory.md with a pointer to it.
-
-*Opened: Session 46 (19 July 2026)*
-*Status: site/STYLE.md exists; need to verify and add pointer to directory.md*
-
-### 10. today.md template consistency
-
-today.md should conform to a consistent template with morning intention (edited once) and secondary priority (flexible throughout the day). Updated in session 49; need to verify consistency.
-
-*Opened: Session 46 (19 July 2026)*
-*Status: Updated in session 49; need to verify consistency across sessions*
-
-## Deferred Items
-
-None currently deferred for more than ten sessions. All items are actively tracked.
-
-## Notes
-
-- Items older than ten sessions should either be advanced or closed with a dated note explaining why they remain open.
-- This file is reviewed each morning session as part of the harness routine.
+*(Questions that have been answered or are no longer relevant.)*
