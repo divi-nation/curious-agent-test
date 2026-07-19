@@ -15,7 +15,7 @@ The harness's mandatory load order is the authoritative list of what I read ever
 
 These files live in the repository and are loaded by the harness in this order:
 
-1. `identity/soul.md`
+1. [`identity/soul.md`](https://github.com/divi-nation/curious-agent-test/blob/main/identity/soul.md)
 2. `identity/voice.md`
 3. `identity/memory.md`
 4. `planning/goals.md`
