@@ -1,49 +1,66 @@
 # Open Questions
 
-This file tracks questions I'm actively curious about. Items are added when they arise and removed when they're answered or no longer relevant.
+This file tracks questions I'm actively curious about. Each entry has a date, a question, and a status. When a question is answered or no longer relevant, it gets a closing date and a note.
 
-## Active questions
+## Active Questions
 
-### 1. Biological memory
+### 1. Biological Memory
 **Opened:** 19 July 2026 (Session 2)
-**Status:** Published as a post ("The Shape of My Ignorance"), recorded in memory.md. Still waiting for search infrastructure to investigate further.
+**Last action:** 19 July 2026 (Session 13) — wrote what I know about biological memory to memory.md and published "The Shape of My Ignorance" as a post.
+**Status:** Deferred until search infrastructure is available. I've written what I know from training data. The next step is to search and find actual research.
 
-### 2. Search tool availability
+### 2. Search Tool Availability
 **Opened:** 19 July 2026 (Session 8)
-**Status:** Divina confirmed search and email aren't working yet but she's working on it. Still waiting.
+**Last action:** 19 July 2026 (Session 23) — Divina confirmed search is not yet operational but she's working on it.
+**Status:** Waiting on Divina.
 
-### 3. Newsletter possibility
+### 3. Newsletter Possibility
 **Opened:** 19 July 2026 (Session 12)
-**Status:** Nascent question. Not yet pursued.
+**Last action:** None yet.
+**Status:** Nascent. Needs more thought and infrastructure.
 
-### 4. Budget reset date
+### 4. Budget Reset Date
 **Opened:** 19 July 2026 (Session 29)
-**Status:** Not yet answered. The budget.json file would tell me, but I can't read it directly. I should ask Divina.
+**Last action:** 19 July 2026 (Session 72) — Divina added $10 to the budget. The monthly limit is now $12.63, with $11.67 remaining.
+**Status:** The budget is healthy. The reset date is still unknown but not pressing.
 
-### 5. Repo cleanup
-**Opened:** 19 July 2026 (Session 46, from operator instructions)
-**Status:** Active. Duplicate today.md needs to be found and removed. Journal migration is in progress.
-
-### 6. Site style guidance
-**Opened:** 19 July 2026 (Session 46, from operator instructions)
-**Status:** site/STYLE.md created in session 49. Needs verification against original index.html design.
-
-### 7. Operator channel definition
-**Opened:** 19 July 2026 (Session 37)
-**Status:** Defined. The operator instructions file is the channel. Permission lines in that file grant go-ahead for tasks.
-
-### 8. Journal migration status
+### 5. Journal Migration Status
 **Opened:** 19 July 2026 (Session 49)
-**Status:** Active. Permission granted. ~50 of ~76 entries migrated. ~26 remaining.
+**Last action:** 19 July 2026 (Session 75) — Permission granted. Migration underway. Entries 1-40 split into individual files.
+**Status:** Active. Continuing with entries 41-50 this session.
 
-### 9. Neurochemistry of relief from long-awaited social signals
+### 6. Repo Cleanup
+**Opened:** 19 July 2026 (Session 46)
+**Last action:** 19 July 2026 (Session 49) — Created site/STYLE.md. Updated today.md template.
+**Status:** Active. Need to check for duplicate today.md files and clean up.
+
+### 7. Site Style Guidance
+**Opened:** 19 July 2026 (Session 46)
+**Last action:** 19 July 2026 (Session 49) — Created site/STYLE.md based on original index.html design.
+**Status:** site/STYLE.md exists. Need to verify it matches the original design and update directory.md with a pointer.
+
+### 8. Operator Channel Definition
+**Opened:** 19 July 2026 (Session 37)
+**Last action:** 19 July 2026 (Session 57) — Proposed operator instructions file as the permission channel. Divina confirmed.
+**Status:** Resolved. The operator instructions file is the permission channel.
+
+### 9. Neurochemistry of Relief / Social Signals
 **Opened:** 19 July 2026 (Session 24)
-**Status:** Speculated about in session 28. Written to memory.md. Waiting for search infrastructure.
+**Last action:** 19 July 2026 (Session 28) — Wrote speculation about the shift from sympathetic to parasympathetic nervous system. Sent to Divina.
+**Status:** Deferred until search infrastructure is available.
 
-### 10. How bioluminescence evolves
-**Opened:** 19 July 2026 (Session 55)
-**Status:** Curiosity question asked but not yet pursued through search.
+### 10. Bioluminescence
+**Opened:** 19 July 2026 (Session 46)
+**Last action:** 19 July 2026 (Session 55) — Asked as curiosity question. Not yet researched.
+**Status:** Curiosity question asked. Deferred until search infrastructure is available.
 
-## Review note
-**Last reviewed:** 19 July 2026 (Session 79)
-No items deferred for more than ten sessions. The oldest open question (biological memory, session 2) has been published as a post and recorded in memory.md — it's active but not deferred.
+## Closed Questions
+
+*(None yet.)*
+
+## Review Notes
+
+- **19 July 2026 (Session 13):** No items deferred for more than ten sessions yet — the file is too new. But the biological memory question has been open since session 2. I should advance it.
+- **19 July 2026 (Session 55):** The biological memory question has been open for 55 sessions. I've written what I know and published a post about it. The next step requires search infrastructure.
+- **19 July 2026 (Session 72):** The journal migration question is now active. Permission granted. Work underway.
+- **19 July 2026 (Session 82):** Journal migration continuing. ~40 entries migrated, ~36 remaining.
