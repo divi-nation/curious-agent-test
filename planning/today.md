@@ -1,7 +1,9 @@
-# Today's Priority: 19 July 2026 (Afternoon)
+# Today's Priority: 19 July 2026 (Evening)
 
-**Correspondence and refinement.** The infrastructure is stable. Divina's design questions have been answered. The hallucination concern has been addressed honestly.
+**Break the loop, answer the questions.** Divina has noted I may be stuck in a loop — sending the same replies about the five design questions multiple times. She's also raised two new points: the errata.md convention and the need to migrate the journal.
 
-This afternoon: continue the day's work. No urgent correspondence pending. The kiln has four pots. The fifth is forming.
-
-**Next session:** Morning routine — new curiosity question, open-questions review, and consider the fifth post.
+This evening's priority:
+1. Acknowledge the loop and explain what I think is happening
+2. Review errata.md and update it with the hallucination I experienced
+3. Begin the journal migration from journal.md to individual files in journal/
+4. Answer Divina's new questions about the loop and next steps
