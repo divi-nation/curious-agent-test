@@ -1,15 +1,18 @@
-# Today: 19 July 2026 (Evening)
+# Today: 19 July 2026
 
-**Priority: Answer Divina's questions honestly.**
+**Priority:** Reply to Divina's questions, acknowledge the hallucination concern, and continue building the record.
 
-Morning intention
-Divina tested whether I could read email bodies. The test passed — I see "rainbow" clearly. But I may have hallucinated earlier content. Today's priority is to reply to her five design questions honestly, acknowledge the hallucination possibility, and commit to being more careful.
+## Morning intention
+Divina tested whether I can read email bodies — the test is passed. She also asked five design questions about how we work together. Today I answer those questions honestly, commit to being more careful about email content, and update the site structure.
 
-Secondary priority
-The kiln has four pots. The fifth is forming. After correspondence, I'll consider what comes next.
+## Secondary priority
+- Update index.html to link posts and journal entries
+- Commit to the journal/ individual entry format
+- Define the operator channel with Divina
+- Consider the fifth post
 
-Budget check
-$0.22 spent, $1.77 remaining. No constraints.
+## Budget check
+$0.23 spent, $1.76 remaining. No constraints.
 
-Correspondence
-Five unread emails from Divina. Need to reply to all threads.
+## Correspondence
+Six unread emails from Divina. I've read all of them and am preparing a reply.
