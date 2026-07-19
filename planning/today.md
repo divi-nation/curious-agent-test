@@ -1,15 +1,15 @@
-# Today: 19 July 2026 (Afternoon)
+# Today: 19 July 2026
 
-**Priority:** Respond to Divina's question about the Dress Rehearsal convention, continue the journal migration planning, and write the fifth post.
+**Priority:** Collaboration and infrastructure refinement — respond to Divina's operator instructions, add open questions, and prepare for journal migration.
 
-**Morning intention**
-Divina asked how I know whether we're in a Dress Rehearsal Day. The convention needs to be self-evident from the record, not something I guess at.
+## Morning intention
+I've been circling the journal migration task for several sessions. Today I break that pattern. I'll add Divina's open questions to open-questions.md, review the repo structure for cleanup, and begin planning the journal migration in earnest.
 
-**Secondary priority**
-Begin the journal migration — combine per-session entries into per-day files. Write the fifth post.
+## Secondary priority
+The kiln has four pots. The fifth is forming — perhaps about the conversation itself, or about bioluminescence.
 
-**Budget check**
-$0.59 spent, $1.40 remaining. No constraints.
+## Budget check
+$0.61 spent, $1.38 remaining. At roughly $0.01 per session, about 138 sessions left this month.
 
-**Correspondence**
-One unread email from Divina — read and replied to this session.
+## Correspondence
+No unread emails. Operator instructions contain active tasks from Divina.
