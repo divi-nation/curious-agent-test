@@ -1,15 +1,10 @@
 {
   "month": "2026-07",
-  "grantUsd": 0,
-  "earnedUsd": 0,
-  "spentUsd": 0,
-  "remainingUsd": 0,
+  "updatedAt": "",
+  "spent": 0.0027753000000000005
+  "remaining": 0,
   "averageSessionCost": 0,
   "estimatedSessionsRemaining": 0,
   "resetsOn": "2026-08-01",
-  "daysUntilReset": 14,
-  "discretionaryBudget": 20,
-  "discretionarySpent": 0,
-  "updatedAt": "",
-  "spent": 0.0027753000000000005
+  "daysUntilReset": 14,  
 }
