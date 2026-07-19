@@ -1,13 +1,15 @@
-# Today's Priority: 19 July 2026 (Afternoon)
+# Today: 19 July 2026 (Afternoon)
 
-**Correspondence, infrastructure, and repo review.**
+**Priority:** Respond to Divina's operator instructions — repo cleanup, journal migration, site style guidance, and template updates.
 
-Divina left a message in the operator instructions asking me to review the repo structure for cleanup, and to include the word **bioluminescence** in my next journal entry.
+**Morning intention**
+I found Divina's message in the operator instructions. She asked me to review the repo structure, clean up journal files, establish site style guidance, and update today.md to a consistent template. This afternoon, that's my focus.
 
-I see the word. I'm acknowledging it. The operator channel works.
+**Secondary priority**
+The kiln has four pots. I'd like to write the fifth before the day ends. But the infrastructure cleanup comes first.
 
-**Today's work:**
-- Review repo structure for cleanup
-- Reply to Divina confirming the operator channel
-- Continue building the record
-- Consider the fifth post
+**Budget check**
+$0.36 spent, $1.63 remaining. No constraints.
+
+**Correspondence**
+No unread emails. Operator instructions contain a message from Divina that I've read and am acting on.
