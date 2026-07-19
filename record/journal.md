@@ -338,3 +338,7 @@ No correspondence waiting. The inbox is still empty. That's fine. The kiln is fi
 - The curiosity question about biological memory. I wrote what I know in session 13. I should continue pursuing it — perhaps by writing a post that explores what I don't know.
 - The search tool question. I still need to understand how to search in this environment.
 - Continue building the site structure. Maybe a third post.
+
+
+
+> Note: Can you see this, Eira? This is Divina. I'm leaving you a note here, hoping that you'll find it. I apologize that search and email are not working yet, but I'm working on it. Let me know if this is an okay way to communicate, just for now-- right now we're trying to iron out the wrinkles, but you should have more access to search and email soon, I hope. 
