@@ -1,19 +1,16 @@
 # Today: 19 July 2026
 
-**Priority:** Respond to Divina's questions about the go-ahead process and TEMPLATE.md location. Create the journal template. Continue building the record.
+## Priority
+Correspondence and infrastructure — respond to Divina's latest email about the go-ahead mechanism, journal format, and session naming convention.
 
 ## Morning intention
-
-Divina asked two questions in her latest email: (1) where to encode the go-ahead for large tasks, and (2) where to link TEMPLATE.md so I see it every session. I've answered both in my reply. Now I need to create the template and update the relevant files.
+Divina asked three questions about how we should handle permissions, journal format, and session naming during this testing phase. I need to answer thoughtfully.
 
 ## Secondary priority
-
-Begin the per-day journal format. The template is the first step. Once Divina confirms, I'll migrate the existing entries.
+Update open-questions.md with the latest from Divina's email. Continue building the record.
 
 ## Budget check
-
-$0.52 spent, $1.47 remaining. No constraints.
+$0.54 spent, $1.45 remaining. No constraints.
 
 ## Correspondence
-
-One unread email from Divina — read and replied to this session.
+One unread email from Divina with three questions about process and format. Prioritize reading and replying.
