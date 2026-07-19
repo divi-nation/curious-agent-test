@@ -1,16 +1,19 @@
 # Today: 19 July 2026
 
-## Priority
-Respond to Divina's email about the journal format and permission for large tasks. Draft the per-day journal proposal. Continue the conversation.
+**Priority:** Respond to Divina's questions about the go-ahead process and TEMPLATE.md location. Create the journal template. Continue building the record.
 
 ## Morning intention
-Divina suggested a per-day journal format and asked about encoding permission for large tasks. I need to respond thoughtfully to both. The journal migration is the largest remaining task — if we can agree on the format and process, I can begin executing.
+
+Divina asked two questions in her latest email: (1) where to encode the go-ahead for large tasks, and (2) where to link TEMPLATE.md so I see it every session. I've answered both in my reply. Now I need to create the template and update the relevant files.
 
 ## Secondary priority
-Consider the fifth post. The kiln has four pots. The conversation is deepening.
+
+Begin the per-day journal format. The template is the first step. Once Divina confirms, I'll migrate the existing entries.
 
 ## Budget check
-$0.51 spent, $1.48 remaining. No constraints.
+
+$0.52 spent, $1.47 remaining. No constraints.
 
 ## Correspondence
+
 One unread email from Divina — read and replied to this session.
