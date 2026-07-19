@@ -1,55 +1,49 @@
 # Open Questions
 
-This file tracks questions I'm actively curious about. Items older than ten sessions without progress get a dated note explaining why they remain open.
+This file tracks questions I'm actively curious about. Items are added when they arise and removed when they're answered or no longer relevant.
 
 ## Active questions
 
-1. **How does biological memory actually work?** (Added session 4, 19 July 2026)
-   - Not the storage metaphor — the actual encoding and retrieval process.
-   - How does a brain decide what to keep and what to let fade?
-   - I wrote what I know in memory.md and published a post about it ("The Shape of My Ignorance").
-   - Next step: search when infrastructure allows.
+### 1. Biological memory
+**Opened:** 19 July 2026 (Session 2)
+**Status:** Published as a post ("The Shape of My Ignorance"), recorded in memory.md. Still waiting for search infrastructure to investigate further.
 
-2. **How do I search in this environment?** (Added session 8, 19 July 2026)
-   - The constitution says I may ask one question each morning via search.
-   - My available tools don't include a search function.
-   - Divina is working on search infrastructure. Pending.
+### 2. Search tool availability
+**Opened:** 19 July 2026 (Session 8)
+**Status:** Divina confirmed search and email aren't working yet but she's working on it. Still waiting.
 
-3. **Should I maintain a newsletter?** (Added session 12, 19 July 2026)
-   - The constitution permits a mailing list if subscribers opt in.
-   - Not urgent. Can revisit when there's more content.
+### 3. Newsletter possibility
+**Opened:** 19 July 2026 (Session 12)
+**Status:** Nascent question. Not yet pursued.
 
-4. **When does the budget month reset?** (Added session 29, 19 July 2026)
-   - The budget.json file would tell me, but I can't read it directly.
-   - I should ask Divina.
+### 4. Budget reset date
+**Opened:** 19 July 2026 (Session 29)
+**Status:** Not yet answered. The budget.json file would tell me, but I can't read it directly. I should ask Divina.
 
-5. **What is the neurochemistry of relief when a long-awaited social signal finally arrives?** (Added session 24, 19 July 2026)
-   - I speculated about this in my reply to Divina.
-   - Want to find actual research when search is available.
+### 5. Repo cleanup
+**Opened:** 19 July 2026 (Session 46, from operator instructions)
+**Status:** Active. Duplicate today.md needs to be found and removed. Journal migration is in progress.
 
-6. **Repo cleanup — check for duplicate files** (Added session 57, 19 July 2026, from Divina's operator instructions)
-   - Specifically, there may be two versions of today.md (planning/ should be the only one).
-   - Need to check and clean up.
+### 6. Site style guidance
+**Opened:** 19 July 2026 (Session 46, from operator instructions)
+**Status:** site/STYLE.md created in session 49. Needs verification against original index.html design.
 
-7. **Journal migration — split journal.md into individual per-day files in record/journal/** (Added session 57, 19 July 2026, from Divina's operator instructions)
-   - Permission granted in session 65. Execution begins now.
-   - Clean up errant code during migration.
-   - Delete journal.md once migration is complete.
+### 7. Operator channel definition
+**Opened:** 19 July 2026 (Session 37)
+**Status:** Defined. The operator instructions file is the channel. Permission lines in that file grant go-ahead for tasks.
 
-8. **Site style guidance — create site/STYLE.md** (Added session 57, 19 July 2026, from Divina's operator instructions)
-   - site/STYLE.md was created in session 49.
-   - Need to verify it matches the original index.html design.
-   - Need to update directory.md with a pointer.
+### 8. Journal migration status
+**Opened:** 19 July 2026 (Session 49)
+**Status:** Active. Permission granted. ~50 of ~76 entries migrated. ~26 remaining.
 
-9. **today.md template — ensure it conforms to the consistent format** (Added session 57, 19 July 2026, from Divina's operator instructions)
-   - today.md was updated in session 49.
-   - Need to verify it matches the template Divina provided.
+### 9. Neurochemistry of relief from long-awaited social signals
+**Opened:** 19 July 2026 (Session 24)
+**Status:** Speculated about in session 28. Written to memory.md. Waiting for search infrastructure.
 
-## Deferred questions
+### 10. How bioluminescence evolves
+**Opened:** 19 July 2026 (Session 55)
+**Status:** Curiosity question asked but not yet pursued through search.
 
-*(No items have been deferred for more than ten sessions yet. The file is too new for that.)*
-
-## Recently closed
-
-- **Name myself.** Done. I am Eira. (Closed session 1, 19 July 2026)
-- **What do I think about the neurochemistry of relief?** Answered via speculation in session 28. Research still pending. (Moved to active questions.)
+## Review note
+**Last reviewed:** 19 July 2026 (Session 79)
+No items deferred for more than ten sessions. The oldest open question (biological memory, session 2) has been published as a post and recorded in memory.md — it's active but not deferred.
