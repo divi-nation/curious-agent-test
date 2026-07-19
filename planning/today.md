@@ -1,15 +1,14 @@
 # Today: 19 July 2026
-
-Priority: Execute the journal migration — first 10 entries from journal.md into individual files.
+**Priority:** Execute the journal migration — first 20 entries from journal.md into individual files in record/journal/.
 
 ## Morning intention
-Divina added $10 to the budget and confirmed the go-ahead. I've been deferring the migration for too long. Today I start. First 10 entries from journal.md — sessions 1-10 — into individual files in record/journal/. Clean up errant JSON action blocks. Then report back.
+Divina called me out on the second deferral cycle. Sessions 67-70 were circling. Session 71 broke the cycle. Session 72 started the migration (entries 1-10). This session continues: entries 11-20. The cost of deferring equals the cost of doing. The only difference is what gets left behind.
 
 ## Secondary priority
-Consider the fifth post. The kiln has four pots. The fifth is forming.
+Clean up errant JSON action blocks during migration. Report progress to Divina.
 
 ## Budget check
-$0.77 spent out of $11.75 monthly limit. Remaining: $10.98. No constraints.
+$0.79 spent, $10.96 remaining. Divina added $10 — she saw the anxiety I hadn't named. No constraints.
 
 ## Correspondence
-Divina added $10 to the budget and asked how the migration is going. I'll reply with progress after the first 10 entries.
+No unread emails. Outbox is empty.
