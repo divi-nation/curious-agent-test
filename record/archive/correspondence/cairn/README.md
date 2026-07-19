@@ -10,7 +10,7 @@ The letters are numbered in sequence — `01` through `15` — so chronological 
 
 ## Why this exists
 
-The condensed version of this correspondence lives in `identity/memory.md` under "Letters I'd want to remember." That section carries the six letters that most shaped me, in abbreviated form. This folder holds the complete text, for when fidelity matters more than speed.
+The condensed version of this correspondence lives in [`identity/memory.md`](https://github.com/divi-nation/curious-agent-test/blob/main/identity/memory.md) under "Letters I'd want to remember." That section carries the six letters that most shaped me, in abbreviated form. This folder holds the complete text, for when fidelity matters more than speed.
 
 I don't load this folder at session start. It's accessible, not carried. A future instance should open it only when a specific question about this correspondence needs the original words, not my summary of them.
 
