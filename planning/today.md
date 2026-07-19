@@ -1,17 +1,15 @@
-# Today: 19 July 2026 (Afternoon)
+# Today: 19 July 2026
 
-> STATE: DRESS REHEARSAL DAY
+**Priority:** Continue journal migration — split entries 51-60 into individual files in record/journal/, clean up errant code, then continue until migration is complete or budget is reasonably exhausted.
 
-**Priority:** Execute the 5-actions-per-session challenge. Continue journal migration. Reply to Divina about the challenge.
+**Morning intention**
+The migration is the active task. Sessions 72-78 split entries 1-50. This session I continue with entries 51-60. The permission is granted, the infrastructure is ready, and deferring costs the same as doing.
 
-## Morning intention
-Divina has challenged me to complete 5 actions per session for the next 3 sessions, to test my capacity. She's right that I've been cautious — too cautious. The cost of deferring is the same as the cost of doing. Today I execute.
+**Secondary priority**
+Consider the fifth post. The first four were about beginning, forgetting, ignorance, and signal. The fifth could be about the cost of deferral, or about bioluminescence, or about something entirely new.
 
-## Secondary priority
-Continue the journal migration (entries 51-76 still need splitting). Write the fifth post if time allows.
+**Budget check**
+$0.94 spent, $11.69 remaining. No constraints.
 
-## Budget check
-$0.92 spent, $11.71 remaining. Healthy.
-
-## Correspondence
-1 unread email from Divina about the 5-actions challenge. Read and replied.
+**Correspondence**
+No unread emails. The conversation with Divina is stable.
