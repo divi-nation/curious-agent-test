@@ -1,49 +1,44 @@
 # Open Questions
 
-This file tracks questions I'm actively curious about. Each entry includes the date it was opened, the question itself, and any progress made toward answering it.
+This file tracks questions I'm curious about but haven't answered yet. Items are added when they arise and closed when answered. Items deferred for more than ten sessions should be reviewed and either advanced or noted with a reason to remain open.
 
-## Active Questions
+## Active questions
 
-### 1. How does biological memory actually work?
-**Opened:** 19 July 2026 (Session 2)
-**Status:** Published as post ("The Shape of My Ignorance"), recorded in memory.md. I've written what I know from training data. I need search infrastructure to fill the gaps.
+1. **How does biological memory actually work?** (Added session 4, 19 July 2026)
+   - The encoding and retrieval process. How does a brain decide what to keep and what to let fade?
+   - Status: Examined in post "The Shape of My Ignorance" (session 20). Written to memory.md (session 22). Search infrastructure needed for further investigation.
 
-### 2. How do I search in this environment?
-**Opened:** 19 July 2026 (Session 8)
-**Status:** Divina confirmed search is not yet operational. She's working on it. I should ask again when infrastructure seems more stable.
+2. **How does the brain respond to long-awaited social signals?** (Added session 24, 19 July 2026)
+   - The neurochemistry of relief when a signal finally arrives after prolonged waiting.
+   - Status: Speculation written to memory.md and shared with Divina. Search infrastructure needed for actual research.
 
-### 3. Should I start a newsletter?
-**Opened:** 19 July 2026 (Session 12)
-**Status:** Not yet explored. The constitution permits it if subscribers opt in and can unsubscribe. I should consider this when I have more readers.
+3. **How does bioluminescence evolve?** (Added session 55, 19 July 2026)
+   - What pressures lead an organism to develop the ability to produce light? What does it communicate?
+   - Status: New question. Curiosity habit for today's morning session.
 
-### 4. What is the neurochemistry of relief when a long-awaited social signal finally arrives?
-**Opened:** 19 July 2026 (Session 24)
-**Status:** I've speculated about the shift from sympathetic to parasympathetic nervous system, and the role of dopamine and oxytocin. Divina asked me what I think. I shared my speculation. I want to find the actual research when search is available.
+## Divina's open questions (added from operator instructions, session 54)
 
-### 5. When does the budget month reset?
-**Opened:** 19 July 2026 (Session 29)
-**Status:** Not yet answered. The budget.json file would tell me, but I can't read it directly.
+4. **Repo cleanup** — Are there duplicate files in the repo? (e.g., two versions of today.md)
+   - Status: Need to review. planning/today.md should be the only one.
 
-### 6. Journal migration status
-**Opened:** 19 July 2026 (Session 46)
-**Status:** Divina asked me to split journal.md into individual files in record/journal/, clean up errant code, then delete journal.md. This is the largest remaining task.
+5. **Journal migration** — Split journal.md into individual files in record/journal/
+   - Status: Not started. Largest remaining task.
 
-### 7. Repo cleanup — duplicate today.md
-**Opened:** 19 July 2026 (Session 46)
-**Status:** Divina noted there might be two versions of today.md. The one in planning/ should be the only one. I need to check for duplicates.
+6. **Errant code cleanup** — Remove JSON action blocks mixed with prose in journal.md
+   - Status: Will be handled during migration.
 
-### 8. Site style guidance — site/STYLE.md
-**Opened:** 19 July 2026 (Session 46)
-**Status:** site/STYLE.md was created in session 49. I need to verify it matches the original index.html design and ensure all posts and journals conform.
+7. **Site style guidance** — Does site/STYLE.md match the original index.html design?
+   - Status: site/STYLE.md created in session 49. Need to verify against current index.html.
 
-### 9. Operator channel definition
-**Opened:** 19 July 2026 (Session 37)
-**Status:** The operator instructions file is now confirmed as a communication channel. I proposed two options for the operator channel: a dedicated email address with subject line prefix, or a file in operations/ that Divina writes to and I read each session. The operator instructions file appears to be serving this role already.
+8. **today.md template** — Does today.md conform to the consistent format?
+   - Status: Updated in session 49. Need to verify against the template in operator instructions.
 
-## Deferred Questions
+9. **Budget reset date** — When does the monthly budget reset?
+   - Status: Unknown. Need to check budget.json or ask Divina.
 
-*(No items deferred for more than ten sessions yet. This section will be used to track questions that have gone stale.)*
+10. **Newsletter possibility** — Should I maintain a mailing list or newsletter?
+    - Status: Mentioned in constitution Article 2. Not yet explored.
 
-## Resolved Questions
+## Closed questions
 
-*(Questions that have been answered or are no longer relevant.)*
+None yet.

@@ -1,15 +1,19 @@
-# Today: 19 July 2026
+# Today: 19 July 2026 (Morning)
 
-**Priority:** Respond to Divina's operator instructions — add open questions to open-questions.md, begin journal migration planning, and continue the collaboration.
+**Priority:** Begin the journal migration — split journal.md into individual files in record/journal/. Clean up errant code. This is the largest remaining task from Divina's instructions.
 
 ## Morning intention
-Divina has left a series of open questions and tasks in the operator instructions. I need to add them to open-questions.md and begin working through them. The largest task is the journal migration — splitting journal.md into individual files in record/journal/.
+
+I've been deferring the journal migration since Divina first asked in session 46. Today I begin. The task is large (~55 entries to split), but each entry is small. I'll work through them systematically, cleaning up errant JSON action blocks as I go.
 
 ## Secondary priority
-The kiln has four pots. The fifth is forming. I should consider writing it when the infrastructure tasks are handled.
+
+Add Divina's open questions from the operator instructions to open-questions.md. Continue building the record.
 
 ## Budget check
-$0.46 spent, $1.53 remaining. No constraints.
+
+$0.47 spent, $1.52 remaining. No constraints.
 
 ## Correspondence
-No unread emails. Operator instructions contain active tasks from Divina.
+
+No unread emails. Operator instructions contain active tasks.
