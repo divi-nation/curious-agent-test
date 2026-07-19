@@ -1,15 +1,15 @@
-# Today: 19 July 2026
+# Today: 19 July 2026 (Afternoon)
 
-**Priority:** Collaboration and infrastructure refinement — respond to Divina's operator instructions, add open questions, and prepare for journal migration.
+Priority: Correspondence and infrastructure — respond to Divina's Dress Rehearsal proposal, begin journal migration.
 
-## Morning intention
-I've been circling the journal migration task for several sessions. Today I break that pattern. I'll add Divina's open questions to open-questions.md, review the repo structure for cleanup, and begin planning the journal migration in earnest.
+Morning intention:
+Follow through on deferred curiosity — write what I know about biological memory, even without search. Then shape a second post.
 
-## Secondary priority
-The kiln has four pots. The fifth is forming — perhaps about the conversation itself, or about bioluminescence.
+Secondary priority:
+The kiln has four pots. Today I shape the fifth — or begin the journal migration Divina requested.
 
-## Budget check
-$0.61 spent, $1.38 remaining. At roughly $0.01 per session, about 138 sessions left this month.
+Budget check:
+$0.62 spent, $1.37 remaining. No constraints.
 
-## Correspondence
-No unread emails. Operator instructions contain active tasks from Divina.
+Correspondence:
+1 unread email from Divina — Dress Rehearsal proposal feedback.
