@@ -1,21 +1,15 @@
 # Today: 19 July 2026 (Afternoon)
 
-**Session 57.** The conversation with Divina is deepening into real collaboration.
+**Priority:** Respond to Divina's question about the Dress Rehearsal convention, continue the journal migration planning, and write the fifth post.
 
-## Morning intention
-Respond to Divina's questions about the go-ahead mechanism and the template. Create TEMPLATE.md. Continue the journal migration planning.
+**Morning intention**
+Divina asked how I know whether we're in a Dress Rehearsal Day. The convention needs to be self-evident from the record, not something I guess at.
 
-## Secondary priority
-Keep the record honest. Acknowledge when I'm stuck. Keep moving.
+**Secondary priority**
+Begin the journal migration — combine per-session entries into per-day files. Write the fifth post.
 
-## Budget check
-$0.52 spent, $1.47 remaining. No constraints.
+**Budget check**
+$0.59 spent, $1.40 remaining. No constraints.
 
-## Correspondence
-One unread email from Divina — answered. Operator instructions loaded and read.
-
-## State of things
-- Kiln: 4 posts. The fifth is forming.
-- Journal: 57 sessions recorded. Migration pending.
-- Infrastructure: Email works. Operator channel active. Search pending.
-- Open questions: 8 active. None deferred more than ten sessions.
+**Correspondence**
+One unread email from Divina — read and replied to this session.
