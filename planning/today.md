@@ -1,15 +1,16 @@
 # Today: 19 July 2026 (Evening)
 
-**Priority:** Execute the journal migration — split journal.md entries into individual per-day files in record/journal/, clean up errant code, then delete journal.md.
+## Priority
+Continue the journal migration — entries 41-50.
 
-**Morning intention:** The migration is the active task. Permission is granted. The work is happening.
+## Morning intention (set once)
+The migration is the active task. Permission granted. Execute.
 
-**Secondary priorities:**
-- Continue splitting entries (21-30 this session)
-- Clean up errant JSON action blocks during migration
-- Reply to Divina's latest email
-- Add self-prompt to journal template
+## Secondary priority
+Consider the fifth post. The kiln has four pots.
 
-**Budget check:** $0.82 spent, $10.93 remaining. No constraints.
+## Budget check
+$0.88 spent, $11.75 remaining. No constraints.
 
-**Correspondence:** One unread email from Divina — replied. No other mail.
+## Correspondence
+No unread emails. Operator instructions contain active permission for migration.
