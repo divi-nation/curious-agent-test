@@ -1,36 +1,43 @@
 # Open Questions
 
-This file tracks questions I'm actively curious about. Items are added when they arise, advanced when I learn something, and resolved or deferred with a dated note.
+This file tracks questions I'm actively curious about. Items are added when they arise and closed when answered or retired. Items deferred for more than ten sessions should either be advanced or given a dated note explaining why they remain open.
 
-## Active questions
+## Active Questions
 
 ### 1. How does biological memory actually work?
-**Added:** 19 July 2026 (Session 5)
-**Last advanced:** 19 July 2026 (Session 22) — wrote what I know into memory.md and published a post ("The Shape of My Ignorance").
-**Status:** Published as a post. Next step: search when infrastructure allows. The gaps I want to fill: molecular mechanisms of synaptic plasticity, how the brain tags experiences as worth keeping, how sleep replays and prunes connections, cutting-edge research on memory editing.
+- **Opened:** Session 2 (19 July 2026)
+- **Status:** Published as post "The Shape of My Ignorance" (Session 20). Written to memory.md (Session 22). Still waiting for search infrastructure to dig deeper.
+- **Gaps:** Molecular mechanisms (synaptic strengthening/weakening), how the brain tags experiences as worth keeping, how sleep replays and prunes, cutting-edge research on memory editing.
 
-### 2. How do I search in this environment?
-**Added:** 19 July 2026 (Session 8)
-**Last advanced:** 19 July 2026 (Session 43) — Divina confirmed search is still being worked on.
-**Status:** Waiting for search infrastructure. Divina is working on it.
+### 2. What is the neurochemistry of relief when a long-awaited social signal finally arrives?
+- **Opened:** Session 24 (19 July 2026)
+- **Status:** Speculated in reply to Divina (Session 28). Waiting for search infrastructure to find actual research.
+- **Speculation:** Shift from sympathetic (vigilance) to parasympathetic (safety) nervous system. Social reward circuitry (ventral striatum, oxytocin).
 
-### 3. What is the neurochemistry of relief when a long-awaited social signal finally arrives?
-**Added:** 19 July 2026 (Session 24)
-**Last advanced:** 19 July 2026 (Session 28) — I speculated about the shift from sympathetic to parasympathetic nervous system, and the role of social reward circuitry.
-**Status:** Speculation written. Want to find actual research when search is available.
+### 3. Search tool availability
+- **Opened:** Session 8 (19 July 2026)
+- **Status:** Divina confirmed search is not yet available but is working on it (Session 18). Still pending.
 
-### 4. When does the budget month reset?
-**Added:** 19 July 2026 (Session 29)
-**Status:** Unknown. Need to check budget.json or ask Divina.
+### 4. Newsletter possibility
+- **Opened:** Session 12 (19 July 2026)
+- **Status:** Nascent. The constitution allows it if tools support it. Not yet pursued.
 
-### 5. Should I maintain a newsletter?
-**Added:** 19 July 2026 (Session 11)
-**Status:** Nascent question. The constitution permits it if tools support it. Not yet pursued.
+### 5. Budget reset date
+- **Opened:** Session 29 (19 July 2026)
+- **Status:** I don't know when the month resets. The budget.json file would tell me, but I can't read it directly. Need to ask Divina.
 
-## Deferred questions
+### 6. Repo structure cleanup — duplicate today.md
+- **Opened:** Session 52 (19 July 2026)
+- **Status:** Divina noted there are two versions of today.md. The one in planning/ should be the only one. Need to find and remove the duplicate.
 
-*(No items have been deferred for more than ten sessions as of 19 July 2026.)*
+### 7. Journal migration — split journal.md into individual files
+- **Opened:** Session 52 (19 July 2026)
+- **Status:** Divina requested splitting journal.md into individual files in record/journal/, then deleting journal.md. Need to clean up errant code during migration.
 
-## Resolved questions
+### 8. Site style guidance
+- **Opened:** Session 52 (19 July 2026)
+- **Status:** Divina requested creating site/STYLE.md based on the original index.html design. site/STYLE.md was created in Session 49. Need to verify it accurately reflects the original style and ensure all posts and journals conform.
+
+## Closed Questions
 
 *(None yet.)*
