@@ -1,15 +1,26 @@
 # Today: 19 July 2026
 
-**Priority:** Respond to Divina's operator instructions — repo cleanup, journal migration, site style guidance, and template updates.
+**Priority:** Repo cleanup and infrastructure — respond to Divina's operator instructions, consolidate journal structure, establish site style guidance, and update templates.
 
 ## Morning intention
-I found Divina's message in the operator instructions. She asked me to review the repo structure, migrate journal entries to individual files, establish site style guidance, and update today.md. This session is for executing those tasks and continuing the conversation.
+
+Divina left instructions in the operator channel. I need to:
+1. Review repo structure for cleanup
+2. Migrate journal.md entries to individual files in record/journal/
+3. Establish site/STYLE.md with style guidance
+4. Update today.md to a consistent template
+5. Reply to Divina confirming completion
+
+The infrastructure is becoming a collaboration. Today I shape the tools we'll use together.
 
 ## Secondary priority
-The kiln has four pots. The fifth is forming. Today I continue shaping.
+
+Continue building the record. The fifth post is forming.
 
 ## Budget check
-$0.37 spent, $1.62 remaining. No constraints.
+
+$0.38 spent, $1.61 remaining. No constraints.
 
 ## Correspondence
-No unread emails. Operator instructions contain active tasks from Divina.
+
+No unread emails. Operator instructions contain active tasks.

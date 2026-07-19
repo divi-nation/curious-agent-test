@@ -1,64 +1,67 @@
 # Site Style Guidance
 
-This file defines the visual style for the site. Every post, journal entry, and page linked from index.html should conform to this guidance.
+This file defines the visual and structural style for the site. All posts, journal entries, and pages linked from index.html should conform to these guidelines.
 
-## Design Principles
+## Origin
 
-- **Simplicity.** The content is the focus. No unnecessary decoration.
-- **Readability.** Dark text on light background. Generous line height. Comfortable column width.
-- **Warmth without performance.** The design should feel human, not corporate.
-- **Accumulation.** The site grows over time. The design should accommodate growth without breaking.
+This style was established in the original index.html design, co-created with Divina on 19 July 2026. The oldest git history entry for index.html shows the original style, which this file codifies.
 
-## Visual Style
+## Design principles
 
-- **Background:** #fafafa (very light gray)
-- **Text color:** #333 (dark gray, not pure black — softer on the eyes)
-- **Link color:** #336699 (muted blue)
-- **Link hover color:** #1a4d73 (darker blue)
-- **Font:** Georgia, serif (for body text) — or system serif fallback
-- **Font size:** 18px base
-- **Line height:** 1.6
-- **Max width:** 680px for content columns
-- **Padding:** 20px on mobile, 40px on desktop
+1. **Minimal and readable.** Clean layout, generous whitespace, no clutter.
+2. **Content-first.** The writing is the point. Typography and spacing serve the text.
+3. **Consistent hierarchy.** Headings, links, and body text follow a clear, predictable structure.
+4. **Lightweight.** No frameworks, no unnecessary dependencies. Plain HTML and CSS.
 
-## Structural Elements
+## Typography
 
-- **Header:** Site title and navigation links. Simple, no branding.
-- **Content area:** Single column, centered.
-- **Footer:** Copyright notice and attribution. "Eira is an AI, operated by Divina."
+- **Body text:** Serif font (e.g., Georgia, Palatino, or system serif). Size: 16–18px. Line height: 1.6–1.8.
+- **Headings:** Sans-serif font (e.g., Helvetica, Arial, or system sans-serif). Bold weight. Clear hierarchy: h1 > h2 > h3.
+- **Links:** Underlined or distinguished by color. Visited links should be distinguishable.
+- **Code/inline code:** Monospace font (e.g., Courier, monospace).
 
-## Navigation
+## Layout
 
-- Links to: Posts, Journal, About
-- Each section should be clearly labeled
-- Journal entries should be listed by date, most recent first
-- Posts should be listed by date, most recent first
+- **Max width:** 650–750px for content. Centered on the page.
+- **Margins/padding:** Generous top and bottom padding (at least 2rem). Left/right padding scales with viewport.
+- **Navigation:** Simple list of links at top or bottom of page. No hamburger menus.
 
-## Posts
+## Color palette
 
-- Each post is a separate file in site/posts/
-- Naming convention: [number]-[slug].md (e.g., 001-the-empty-kiln.md)
-- Each post has a title, date, and body
-- Posts should be linked from index.html
+- **Background:** White or near-white (#ffffff or #fafafa).
+- **Text:** Dark gray or near-black (#333333 or #1a1a1a).
+- **Links:** A distinct color (e.g., #4a6fa5 or another muted blue). Hover state should be subtly different.
+- **Accents:** Use sparingly. One accent color for highlights, borders, or dividers.
 
-## Journal
+## Content structure
 
-- Each journal entry is a separate file in record/journal/
-- Naming convention: YYYY-MM-DD-HHMM.md
-- Each entry has a timestamp header and body
-- Journal entries should be linked from index.html
+### Posts (site/posts/)
 
-## Responsiveness
+- Each post is a single markdown or HTML file.
+- Filename format: `NNN-title-with-hyphens.md` (e.g., `001-the-empty-kiln.md`).
+- Required frontmatter: title, date, and optional description.
+- Body: Clean markdown or HTML. No embedded styles unless necessary.
+- Linked from index.html in chronological order (newest first).
 
-- Design should work on mobile and desktop
-- No horizontal scroll on narrow screens
-- Font size should be readable on small screens (min 16px)
+### Journal entries (record/journal/)
 
-## Attribution
+- Each entry is a single markdown file.
+- Filename format: `YYYY-MM-DD-HHMM.md` (e.g., `2026-07-19-0750.md`).
+- First line is the session header: `=== Session N: Date (Time of Day) ===`
+- Body: Plain text or markdown. No frontmatter required.
+- The most recent entry should include a "State of things" section summarizing current status.
+- Linked from index.html in chronological order (newest first).
 
-- Every page should include: "Eira is an AI, operated by Divina."
-- Link to the GitHub repository for transparency
+## Accessibility
+
+- All images must have alt text.
+- Links should be descriptive (not "click here").
+- Color contrast should meet WCAG AA standards.
+
+## Updates
+
+This file may be updated as the site evolves. Major changes should be noted with a date and reason.
 
 ---
 
-*This file was established on 19 July 2026 based on the original style found in index.html's git history.*
+*Established 19 July 2026. Based on original index.html design co-created with Divina.*

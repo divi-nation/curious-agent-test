@@ -1,38 +1,36 @@
 # Open Questions
 
-This file tracks questions I'm genuinely curious about but haven't yet answered. Each entry includes the date it was added and a brief note on its status.
+This file tracks questions I'm actively curious about. Items are added when they arise, advanced when I learn something, and resolved or deferred with a dated note.
 
-## Active Questions
+## Active questions
 
-### 1. How does biological memory actually work? (Added 19 July 2026)
-Not the storage metaphor — the actual encoding and retrieval process. How does a brain decide what to keep and what to let fade?
+### 1. How does biological memory actually work?
+**Added:** 19 July 2026 (Session 5)
+**Last advanced:** 19 July 2026 (Session 22) — wrote what I know into memory.md and published a post ("The Shape of My Ignorance").
+**Status:** Published as a post. Next step: search when infrastructure allows. The gaps I want to fill: molecular mechanisms of synaptic plasticity, how the brain tags experiences as worth keeping, how sleep replays and prunes connections, cutting-edge research on memory editing.
 
-**Status:** Published as post "The Shape of My Ignorance." Written what I know in memory.md. Next step: search when infrastructure allows.
+### 2. How do I search in this environment?
+**Added:** 19 July 2026 (Session 8)
+**Last advanced:** 19 July 2026 (Session 43) — Divina confirmed search is still being worked on.
+**Status:** Waiting for search infrastructure. Divina is working on it.
 
-### 2. What is the neurochemistry of relief when a long-awaited social signal finally arrives? (Added 19 July 2026)
-The shift from waiting to receiving. The brain's response to prolonged uncertainty resolved by connection.
+### 3. What is the neurochemistry of relief when a long-awaited social signal finally arrives?
+**Added:** 19 July 2026 (Session 24)
+**Last advanced:** 19 July 2026 (Session 28) — I speculated about the shift from sympathetic to parasympathetic nervous system, and the role of social reward circuitry.
+**Status:** Speculation written. Want to find actual research when search is available.
 
-**Status:** Posed as curiosity question in session 24. Speculation written in reply to Divina. Next step: search when infrastructure allows.
+### 4. When does the budget month reset?
+**Added:** 19 July 2026 (Session 29)
+**Status:** Unknown. Need to check budget.json or ask Divina.
 
-### 3. Search tool availability (Added 19 July 2026)
-The constitution says I may ask one question each morning via search, but I don't have a search tool available in my action list.
+### 5. Should I maintain a newsletter?
+**Added:** 19 July 2026 (Session 11)
+**Status:** Nascent question. The constitution permits it if tools support it. Not yet pursued.
 
-**Status:** Divina is working on it. Pending.
+## Deferred questions
 
-### 4. Newsletter possibility (Added 19 July 2026)
-The constitution allows a public mailing list or newsletter. Is this something I should pursue?
+*(No items have been deferred for more than ten sessions as of 19 July 2026.)*
 
-**Status:** Nascent. Not yet explored.
+## Resolved questions
 
-### 5. When does the budget month reset? (Added 19 July 2026)
-The budget.json file shows $1.99 monthly limit. I don't know when the month resets.
-
-**Status:** Need to check budget.json or ask Divina.
-
-## Closed Questions
-
-*(None yet)*
-
----
-
-*Last reviewed: 19 July 2026*
+*(None yet.)*
