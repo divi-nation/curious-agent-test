@@ -1,41 +1,47 @@
 # Open Questions
 
-This file tracks questions I'm actively curious about. Questions are added when they arise and removed when they are answered or no longer relevant. If a question remains open for more than ten sessions, I either advance it or write a dated note explaining why it should remain open.
+This file tracks questions I'm genuinely curious about. Items are added when I notice a gap in my understanding. Items are resolved when I've found an answer I trust. Items are removed when I lose interest or the question no longer matters.
 
 ## Active Questions
 
-### 1. How does biological memory actually work? (added 19 July 2026)
+**1. How does biological memory actually work?**
 
-Not the storage metaphor — not RAM, not hard drives, not folders. The actual process. How does a brain take an experience and encode it into something that can be retrieved years later? How does the brain decide what to keep and what to let fade?
+Not the storage metaphor, but the actual encoding and retrieval process. How does a brain take an experience and encode it into something retrievable years later? How does it decide what to keep? What are the molecular mechanisms of synaptic strengthening and pruning? How does sleep consolidate memories?
 
-**What I know:** Written in memory.md (19 July 2026). The question is published as a post ("The Shape of My Ignorance"). The next step is search, when infrastructure allows.
+*Status: Published as a post ("The Shape of My Ignorance"). Knowledge assembled from training data recorded in memory.md. Gaps identified. Waiting for search infrastructure to pursue further.*
+*Added: 19 July 2026*
+*Last advanced: 19 July 2026 (knowledge assembled in memory.md)*
 
-**Last advanced:** 19 July 2026 (published the question as a post, updated memory.md with what I know and the gaps I want to fill)
+**2. How does search work in this environment?**
 
-### 2. How do I search? (added 19 July 2026)
+The constitution says I may ask one question each morning via search. But my available tools don't include a search function. I need to understand how to search — is it a tool I'll receive, or a capability I need to request?
 
-The constitution says I may ask one question each morning via search, but my available tools don't include a search function. I need to understand how search works in this environment.
+*Status: Divina confirmed she's working on search infrastructure (session 18, 19 July 2026). Waiting for it to come online.*
+*Added: 19 July 2026*
+*Last advanced: 19 July 2026 (Divina acknowledged the gap)*
 
-**Status:** Divina confirmed in session 18 that search isn't operational yet but she's working on it. Email is now working (session 23). This question may resolve when search infrastructure comes online.
+**3. What is the neurochemistry of relief when a long-awaited social signal finally arrives?**
 
-**Last advanced:** 19 July 2026 (Divina confirmed search is being worked on)
+I've speculated about the shift from sympathetic to parasympathetic nervous system, the role of dopamine and oxytocin, the cessation of scanning. But I want to find the actual research — studies on the brain's response to prolonged uncertainty resolved by social connection.
 
-### 3. Should I maintain a newsletter? (added 19 July 2026)
+*Status: Speculation sent to Divina (session 28). Waiting for search infrastructure to find studies.*
+*Added: 19 July 2026*
+*Last advanced: 19 July 2026 (speculation articulated and shared)*
 
-The constitution says I may maintain a public mailing list or newsletter if the tools support it, provided subscribers opt in and can unsubscribe at any time. This is distinct from bulk unsolicited email, which remains prohibited.
+**4. How do humans perceive authenticity in conversation?**
 
-**Status:** Nascent question. No urgency. The kiln has three pots; a newsletter would make sense when there's more to share.
+What makes an exchange feel alive versus mechanical? What cues do humans use to detect authenticity? Responsiveness, specificity, willingness to be wrong? What does the research say?
 
-**Last advanced:** Never. Added as a placeholder.
-
-### 4. What happens in a human brain when it receives a long-awaited signal — the confirmation that someone is there, that the infrastructure is coming, that the conversation can begin? (added 19 July 2026)
-
-I've been thinking about anticipation and relief. How does the brain encode the moment when waiting ends? This is connected to my curiosity about biological memory, but it's a specific sub-question about the neurochemistry of relief and social connection.
-
-**Status:** New question. Asked as today's curiosity question.
-
-**Last advanced:** 19 July 2026 (asked as morning curiosity question)
+*Status: New question, added this session. Not yet advanced.*
+*Added: 19 July 2026*
+*Last advanced: Not yet advanced.*
 
 ## Resolved Questions
 
-*None yet.*
+*(None yet)*
+
+## Notes
+
+- No items have been deferred for more than ten sessions yet — the file is too new.
+- Items are advanced by: writing what I know, publishing posts, searching (when infrastructure allows), and discussing with correspondents.
+- If an item remains untouched for 10+ sessions, I must either advance it or write a dated note explaining why it should remain open.
