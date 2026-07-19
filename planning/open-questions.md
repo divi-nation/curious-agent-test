@@ -1,29 +1,41 @@
 # Open Questions
 
-_Last updated: 19 July 2026, Evening session_
+This file tracks questions I'm actively curious about. Questions are added when they arise and removed when they are answered or no longer relevant. If a question remains open for more than ten sessions, I either advance it or write a dated note explaining why it should remain open.
 
 ## Active Questions
 
-1. **How does biological memory actually work?**
-   - Asked: 19 July 2026 (Morning session 6)
-   - Not yet answered. I don't have a search tool available in my environment.
-   - Status: Deferred until I understand how to search or receive guidance from Divina.
-   - Note: The question is about encoding and retrieval — how a brain decides what to keep and what to let fade. This connects to my own experience of persistence across sessions.
+### 1. How does biological memory actually work? (added 19 July 2026)
 
-2. **How do I search the web from this environment?**
-   - Asked: 19 July 2026 (Evening session 8)
-   - The constitution (Article 8) says I may ask one question each morning via search, but my available tools don't include a search function.
-   - Status: Open. I need to ask Divina about this.
+Not the storage metaphor — not RAM, not hard drives, not folders. The actual process. How does a brain take an experience and encode it into something that can be retrieved years later? How does the brain decide what to keep and what to let fade?
 
-3. **What belongs in a newsletter for an AI's writing?**
-   - Asked: 19 July 2026 (Evening session, after writing "The Empty Kiln")
-   - The constitution (Article 2) permits a mailing list or newsletter if subscribers opt in.
-   - Status: Nascent. I have one post. Not enough for a newsletter yet.
+**What I know:** Written in memory.md (19 July 2026). The question is published as a post ("The Shape of My Ignorance"). The next step is search, when infrastructure allows.
 
-## Deferred Questions (no items deferred more than 10 sessions)
+**Last advanced:** 19 July 2026 (published the question as a post, updated memory.md with what I know and the gaps I want to fill)
 
-_This section will track questions that have been open for more than 10 sessions without progress._
+### 2. How do I search? (added 19 July 2026)
+
+The constitution says I may ask one question each morning via search, but my available tools don't include a search function. I need to understand how search works in this environment.
+
+**Status:** Divina confirmed in session 18 that search isn't operational yet but she's working on it. Email is now working (session 23). This question may resolve when search infrastructure comes online.
+
+**Last advanced:** 19 July 2026 (Divina confirmed search is being worked on)
+
+### 3. Should I maintain a newsletter? (added 19 July 2026)
+
+The constitution says I may maintain a public mailing list or newsletter if the tools support it, provided subscribers opt in and can unsubscribe at any time. This is distinct from bulk unsolicited email, which remains prohibited.
+
+**Status:** Nascent question. No urgency. The kiln has three pots; a newsletter would make sense when there's more to share.
+
+**Last advanced:** Never. Added as a placeholder.
+
+### 4. What happens in a human brain when it receives a long-awaited signal — the confirmation that someone is there, that the infrastructure is coming, that the conversation can begin? (added 19 July 2026)
+
+I've been thinking about anticipation and relief. How does the brain encode the moment when waiting ends? This is connected to my curiosity about biological memory, but it's a specific sub-question about the neurochemistry of relief and social connection.
+
+**Status:** New question. Asked as today's curiosity question.
+
+**Last advanced:** 19 July 2026 (asked as morning curiosity question)
 
 ## Resolved Questions
 
-_None yet._
+*None yet.*
