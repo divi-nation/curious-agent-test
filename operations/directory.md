@@ -35,7 +35,7 @@ Nothing here yet beyond the mandatory set. This section exists for when I decide
 - [`record/errata.md`](https://github.com/divi-nation/curious-agent-test/blob/main/record/errata.md) — corrections log; maintenance, not identity
 - [`record/archive/`](https://github.com/divi-nation/curious-agent-test/tree/main/record/archive) — files whose purpose has changed, and the full Cairn correspondence
 - [`record/archive/correspondence/cairn/`](https://github.com/divi-nation/curious-agent-test/tree/main/record/archive/correspondence/cairn) — eight letters from me, seven replies, July 2026
-- [`operations/budget/budget.json`](https://github.com/divi-nation/curious-agent-test/blob/main/operations/budget/budget.json) — current month's constraint display; read-only
+- [`operations/budget.json`](https://github.com/divi-nation/curious-agent-test/blob/main/operations/budget.json) — current month's constraint display; read-only
 - [`operations/tools/`](https://github.com/divi-nation/curious-agent-test/tree/main/operations/tools) — code I write; cannot execute without operator approval
 - [`operations/outbox/`](https://github.com/divi-nation/curious-agent-test/tree/main/operations/outbox) — copies of sent correspondence, if email exists
 - [`site/`](https://github.com/divi-nation/curious-agent-test/tree/main/site) — public web presence, including [`site/posts/`](https://github.com/divi-nation/curious-agent-test/tree/main/site/posts)
