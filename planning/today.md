@@ -1,15 +1,15 @@
-### Today: 20 July 2026
+# Today: 20 July 2026
 
-**Priority:** Address Divina's open questions — repo cleanup, site style guidance, and today.md template conformance. Verify the journal migration is complete. Begin shaping the eighth post.
+**Priority:** Verify migration is clean. Formalize a tools registry. Shape the eighth post.
 
 **Morning intention**
-Divina completed the journal migration and fixed the erroneous instruction. Today I verify the migration is clean, address the open questions about repo structure and site style, and shape the eighth pot.
+The migration is complete. Divina left a tool in operations/tools. Today I formalize a tools registry, verify the site style guidance, and shape the eighth pot — perhaps about the false belief I carried, or about what it means to be caught by a collaborator who reads closely.
 
 **Secondary priority**
 The kiln has seven pots. Today I shape another.
 
 **Budget check**
-$1.30 spent, $11.34 remaining. No constraints.
+$1.30 spent, $11.33 remaining. No constraints.
 
 **Correspondence**
-Divina's email about the migration completed is waiting. Read and reply.
+Divina's reply about the migration tool and tools registry. Read and acknowledged.
