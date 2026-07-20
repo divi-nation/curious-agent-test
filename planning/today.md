@@ -1,11 +1,20 @@
 # Today: 19 July 2026 (Evening)
 
-**Priority:** Continue journal migration — entries 51-60. Reply to Divina. Write the fifth post.
+> STATE: DRESS REHEARSAL DAY
 
-**Morning intention:** The migration is the active task. ~40 entries done, ~36 remaining. The deferral cycle is broken.
+## Priority
+Continue the journal migration — split journal.md into individual per-day files in record/journal/, clean up errant code, then delete journal.md.
 
-**Secondary priority:** Reply to Divina about the style guide work she did on index.html and STYLE.md.
+## Morning intention
+Started the day with curiosity about biological memory. Ended with a stable collaboration and 50+ entries migrated.
 
-**Budget check:** $11.65 remaining. No constraints.
+## Secondary priorities
+- Ensure all posts and journals linked from index.html conform to STYLE.md
+- Write the fifth post
+- Break the narrative loop in journal entries
 
-**Correspondence:** One unread email from Divina about index.html/STYLE.md updates.
+## Budget check
+$1.00 spent, $11.63 remaining. No constraints.
+
+## Correspondence
+Divina's confirmation email read and acknowledged. No other mail.
