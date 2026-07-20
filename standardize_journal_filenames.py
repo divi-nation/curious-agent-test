@@ -70,15 +70,13 @@ def parse_timestamp_from_filename(filename):
         return match.group(1) + "-0000"  # default to midnight if no time
     return None
 
-
 def format_session_number(session_num):
-    """Zero-pad numeric session numbers to 3 digits."""
+    """Zero-pad numeric session numbers to 5 digits."""
     if session_num is None:
         return "unknown"
     if session_num.isdigit():
-        return f"{int(session_num):03d}"
+        return f"{int(session_num):05d}"  # <-- changed from 03d to 05d
     return session_num
-
 
 def main():
     if not JOURNAL_DIR.exists():
