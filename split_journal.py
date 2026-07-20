@@ -1,250 +1,146 @@
 #!/usr/bin/env python3
 """
-Split journal.md into per-session files.
-Run this from the root of your curious-agent-test repo.
-It will create individual files in record/journal/ and rename the original to journal.md.bak.
+Standardize journal filenames to: YYYY-MM-DD-HHMM-session-XXXXX.md
 
-Naming convention: YYYY-MM-DD-HHMM-session-XXX.md
-  - HHMM is the time from the timestamp header (e.g., 07:50 → 0750)
-  - XXX is the zero‑padded session number (e.g., 1 → 001)
-  - If the session number contains letters (e.g., 10B), it is kept as‑is.
+This script scans record/journal/, reads each file's content, extracts the
+session number and timestamp, and renames the file to the new format.
+
+If a file has no timestamp, it uses the file's modification time.
+If two files resolve to the same session, the timestamp is incremented.
 """
 
 import re
+import os
 from pathlib import Path
-
-JOURNAL_MD = Path("record/journal.md")
-OUTPUT_DIR = Path("record/journal")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+from datetime import datetime
 
 
-def parse_entries(content):
-    """Split content into entries based on timestamp lines."""
-    timestamp_pattern = re.compile(r'^##\s+\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}', re.MULTILINE)
-    entries = []
-    lines = content.splitlines(keepends=True)
-    current_entry = []
-    for line in lines:
-        if timestamp_pattern.match(line.strip()):
-            if current_entry:
-                entries.append(''.join(current_entry))
-                current_entry = []
-        current_entry.append(line)
-    if current_entry:
-        entries.append(''.join(current_entry))
-    return entries
+# ---------- Auto-detect repo root ----------
+def find_repo_root():
+    current = Path(__file__).resolve().parent
+    while current.parent != current:
+        if (current / ".git").exists():
+            return current
+        current = current.parent
+    return Path.cwd()
 
 
-def extract_session_number(entry):
-    """Extract session number from the header line (supports numbers and letters, e.g., 10B)."""
-    match = re.search(r'=== Session ([A-Za-z0-9]+):', entry)
+REPO_ROOT = find_repo_root()
+JOURNAL_DIR = REPO_ROOT / "record/journal"
+# -------------------------------------------
+
+
+def extract_session_from_content(content):
+    """Extract session number from the content (e.g., '=== Session 29:')."""
+    match = re.search(r'=== Session ([A-Za-z0-9]+):', content)
     if match:
         return match.group(1)
     return None
 
 
-def extract_timestamp(entry):
-    """
-    Extract date and time from the ## timestamp line.
-    Returns (date_str, time_hhmm) where date_str is YYYY-MM-DD and time_hhmm is HHMM.
-    If not found, returns (None, None).
-    """
-    match = re.search(r'^##\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}):(\d{2})', entry, re.MULTILINE)
+def extract_timestamp_from_content(content):
+    """Extract timestamp from the content (e.g., '## 2026-07-19 07:50')."""
+    match = re.search(r'^##\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}):(\d{2})', content, re.MULTILINE)
     if match:
         date_str = match.group(1)
         hour = match.group(2)
         minute = match.group(3)
-        time_hhmm = f"{hour}{minute}"
-        return date_str, time_hhmm
-    return None, None
+        return f"{date_str}-{hour}{minute}"
+    return None
 
 
-def format_session_number(session_num):
+def parse_session_from_filename(filename):
     """
-    Format the session number.
-    If it's purely numeric, zero‑pad to 3 digits (e.g., 1 → 001, 10 → 010).
-    Otherwise (e.g., 10B), keep as‑is.
+    Try to extract session number from the filename if content parsing fails.
     """
-    if session_num is None:
-        return "unknown"
-    if session_num.isdigit():
-        return f"{int(session_num):03d}"
-    return session_num
-
-
-def main():
-    if not JOURNAL_MD.exists():
-        print(f"❌ {JOURNAL_MD} not found. Are you in the repo root?")
-        return
-
-    print(f"📖 Reading {JOURNAL_MD}...")
-    content = JOURNAL_MD.read_text(encoding="utf-8")
-    entries = parse_entries(content)
-    print(f"📝 Found {len(entries)} entries.")
-
-    if not entries:
-        print("⚠️ No entries found. Exiting.")
-        return
-
-    # Backup original
-    backup = JOURNAL_MD.with_suffix(".md.bak")
-    JOURNAL_MD.rename(backup)
-    print(f"💾 Original backed up to {backup}")
-
-    # Write each entry
-    written = 0
-    for entry in entries:
-        raw_session = extract_session_number(entry)
-        date_str, time_hhmm = extract_timestamp(entry)
-
-        session = format_session_number(raw_session)
-        if date_str is None:
-            date_str = "unknown-date"
-        if time_hhmm is None:
-            time_hhmm = "0000"  # fallback
-
-        filename = f"{date_str}-{time_hhmm}-session-{session}.md"
-        filepath = OUTPUT_DIR / filename
-
-        # Handle duplicate filenames
-        counter = 1
-        while filepath.exists():
-            filename = f"{date_str}-{time_hhmm}-session-{session}-{counter}.md"
-            filepath = OUTPUT_DIR / filename
-            counter += 1
-
-        filepath.write_text(entry, encoding="utf-8")
-        written += 1
-        if written % 10 == 0:
-            print(f"📝 Written {written} entries...")
-
-    print(f"✅ Done. Created {written} files in {OUTPUT_DIR}/")
-    print(f"📄 Original journal.md backed up to {backup}")
-
-
-if __name__ == "__main__":
-    main()#!/usr/bin/env python3
-"""
-Split journal.md into per-session files.
-Run this from the root of your curious-agent-test repo.
-It will create individual files in record/journal/ and rename the original to journal.md.bak.
-
-Naming convention: YYYY-MM-DD-HHMM-session-XXX.md
-  - HHMM is the time from the timestamp header (e.g., 07:50 → 0750)
-  - XXX is the zero‑padded session number (e.g., 1 → 001)
-  - If the session number contains letters (e.g., 10B), it is kept as‑is.
-"""
-
-import re
-from pathlib import Path
-
-JOURNAL_MD = Path("record/journal.md")
-OUTPUT_DIR = Path("record/journal")
-OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-
-
-def parse_entries(content):
-    """Split content into entries based on timestamp lines."""
-    timestamp_pattern = re.compile(r'^##\s+\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}', re.MULTILINE)
-    entries = []
-    lines = content.splitlines(keepends=True)
-    current_entry = []
-    for line in lines:
-        if timestamp_pattern.match(line.strip()):
-            if current_entry:
-                entries.append(''.join(current_entry))
-                current_entry = []
-        current_entry.append(line)
-    if current_entry:
-        entries.append(''.join(current_entry))
-    return entries
-
-
-def extract_session_number(entry):
-    """Extract session number from the header line (supports numbers and letters, e.g., 10B)."""
-    match = re.search(r'=== Session ([A-Za-z0-9]+):', entry)
+    match = re.search(r'session-([A-Za-z0-9]+)', filename, re.IGNORECASE)
+    if match:
+        return match.group(1)
+    match = re.search(r'-(\d+)\.md$', filename)
     if match:
         return match.group(1)
     return None
 
 
-def extract_timestamp(entry):
-    """
-    Extract date and time from the ## timestamp line.
-    Returns (date_str, time_hhmm) where date_str is YYYY-MM-DD and time_hhmm is HHMM.
-    If not found, returns (None, None).
-    """
-    match = re.search(r'^##\s+(\d{4}-\d{2}-\d{2})\s+(\d{2}):(\d{2})', entry, re.MULTILINE)
+def parse_timestamp_from_filename(filename):
+    """Try to extract a date/time from the filename."""
+    match = re.search(r'(\d{4}-\d{2}-\d{2})-(\d{4})', filename)
     if match:
-        date_str = match.group(1)
-        hour = match.group(2)
-        minute = match.group(3)
-        time_hhmm = f"{hour}{minute}"
-        return date_str, time_hhmm
-    return None, None
+        return f"{match.group(1)}-{match.group(2)}"
+    match = re.search(r'(\d{4}-\d{2}-\d{2})', filename)
+    if match:
+        return match.group(1) + "-0000"
+    return None
 
 
 def format_session_number(session_num):
-    """
-    Format the session number.
-    If it's purely numeric, zero‑pad to 3 digits (e.g., 1 → 001, 10 → 010).
-    Otherwise (e.g., 10B), keep as‑is.
-    """
+    """Zero-pad numeric session numbers to 5 digits."""
     if session_num is None:
         return "unknown"
     if session_num.isdigit():
-        return f"{int(session_num):03d}"
+        return f"{int(session_num):05d}"
     return session_num
 
 
 def main():
-    if not JOURNAL_MD.exists():
-        print(f"❌ {JOURNAL_MD} not found. Are you in the repo root?")
+    if not JOURNAL_DIR.exists():
+        print(f"❌ {JOURNAL_DIR} not found. Are you in the repo root?")
         return
 
-    print(f"📖 Reading {JOURNAL_MD}...")
-    content = JOURNAL_MD.read_text(encoding="utf-8")
-    entries = parse_entries(content)
-    print(f"📝 Found {len(entries)} entries.")
-
-    if not entries:
-        print("⚠️ No entries found. Exiting.")
+    files = list(JOURNAL_DIR.glob("*.md"))
+    if not files:
+        print("⚠️ No .md files found in record/journal/")
         return
 
-    # Backup original
-    backup = JOURNAL_MD.with_suffix(".md.bak")
-    JOURNAL_MD.rename(backup)
-    print(f"💾 Original backed up to {backup}")
+    print(f"📂 Found {len(files)} files in {JOURNAL_DIR}")
 
-    # Write each entry
-    written = 0
-    for entry in entries:
-        raw_session = extract_session_number(entry)
-        date_str, time_hhmm = extract_timestamp(entry)
+    renamed_count = 0
+    skipped_count = 0
+    duplicates_found = 0
 
-        session = format_session_number(raw_session)
-        if date_str is None:
-            date_str = "unknown-date"
-        if time_hhmm is None:
-            time_hhmm = "0000"  # fallback
+    for file_path in sorted(files):
+        content = file_path.read_text(encoding="utf-8")
+        
+        session_num = extract_session_from_content(content)
+        timestamp = extract_timestamp_from_content(content)
 
-        filename = f"{date_str}-{time_hhmm}-session-{session}.md"
-        filepath = OUTPUT_DIR / filename
+        if session_num is None:
+            session_num = parse_session_from_filename(file_path.name)
+        if timestamp is None:
+            timestamp = parse_timestamp_from_filename(file_path.name)
 
-        # Handle duplicate filenames
+        if timestamp is None:
+            mtime = datetime.fromtimestamp(file_path.stat().st_mtime)
+            timestamp = mtime.strftime("%Y-%m-%d-%H%M")
+            print(f"  ⏰ Using modification time for {file_path.name}: {timestamp}")
+
+        if session_num is None:
+            session_num = "unknown"
+
+        session_formatted = format_session_number(session_num)
+        new_name = f"{timestamp}-session-{session_formatted}.md"
+        new_path = JOURNAL_DIR / new_name
+
         counter = 1
-        while filepath.exists():
-            filename = f"{date_str}-{time_hhmm}-session-{session}-{counter}.md"
-            filepath = OUTPUT_DIR / filename
+        while new_path.exists() and new_path != file_path:
+            duplicates_found += 1
+            new_name = f"{timestamp}-session-{session_formatted}-{counter:04d}.md"
+            new_path = JOURNAL_DIR / new_name
             counter += 1
 
-        filepath.write_text(entry, encoding="utf-8")
-        written += 1
-        if written % 10 == 0:
-            print(f"📝 Written {written} entries...")
+        if file_path != new_path:
+            file_path.rename(new_path)
+            renamed_count += 1
+            print(f"  ✅ Renamed: {file_path.name} → {new_name}")
+        else:
+            skipped_count += 1
 
-    print(f"✅ Done. Created {written} files in {OUTPUT_DIR}/")
-    print(f"📄 Original journal.md backed up to {backup}")
+    print("\n" + "=" * 50)
+    print(f"✅ Done! Renamed {renamed_count} files.")
+    print(f"📭 Skipped {skipped_count} files (already correct).")
+    if duplicates_found:
+        print(f"⚠️ Handled {duplicates_found} duplicate(s) by adding a counter.")
+    print("=" * 50)
 
 
 if __name__ == "__main__":
