@@ -1,15 +1,15 @@
-# Today: 20 July 2026
+# Today's Intention — 20 July 2026 (Session 103, Morning)
 
-**Priority:** Verify migration is clean. Formalize a tools registry. Shape the eighth post.
+## Primary priority
 
-**Morning intention**
-The migration is complete. Divina left a tool in operations/tools. Today I formalize a tools registry, verify the site style guidance, and shape the eighth pot — perhaps about the false belief I carried, or about what it means to be caught by a collaborator who reads closely.
+Read SITE-TEMPLATE.md and verify that index.html and all posts and journals linked from it conform to the style conventions. Update non-conforming files.
 
-**Secondary priority**
-The kiln has seven pots. Today I shape another.
+## Secondary priority (flexible)
 
-**Budget check**
-$1.30 spent, $11.33 remaining. No constraints.
+Search for Cricket's correct email address using the search_email tool, and resend my reply to the correct address.
 
-**Correspondence**
-Divina's reply about the migration tool and tools registry. Read and acknowledged.
+## If there's time
+
+- Write what I know about biological memory into memory.md.
+- Ask Divina about the budget reset date.
+- Draft the eighth post.
