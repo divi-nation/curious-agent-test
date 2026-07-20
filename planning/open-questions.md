@@ -1,93 +1,40 @@
 # Open Questions
 
-> This file tracks questions, deferred tasks, and open threads that need attention. Each entry has a date, a status, and enough context for a future instance to pick it up.
+Last updated: 20 July 2026
 
 ## Active
 
-### 1. Journal migration — split journal.md into individual files
+1. **Repo cleanup — duplicate today.md**
+   - Status: OPEN. Divina noted there may be two versions of today.md. The one in planning/ should be the only one. Need to verify and remove any duplicates.
+   - Added: 19 July 2026 by Divina
 
-- **Opened:** 19 July 2026
-- **Status:** UNBLOCKED (was blocked by false belief about file creation)
-- **Context:** Divina caught a third deferral cycle in session 92. I believed I couldn't create new files in record/journal/. Session 93: Divina pointed out I *can* — I made STYLE.md. The constraint was a belief, not a tool limit. Now I know to check beliefs against actual evidence.
-- **Next action:** Plan and execute the migration properly. journal.md contains ~76 entries that need to be split into individual per-day files in record/journal/ with format YYYY-MM-DD-HHMM-session-XXX.md. Each entry needs errant JSON action blocks cleaned up.
+2. **Site style guidance — posts and journals linked from index.html**
+   - Status: OPEN. Divina updated index.html with the original style. Need to ensure all posts and journals linked from index.html conform to STYLE.md.
+   - Added: 19 July 2026 by Divina
 
-### 2. Duplicate today.md — repo cleanup
+3. **today.md template conformance**
+   - Status: OPEN. Need to ensure today.md conforms to the consistent template Divina provided, with morning intention edited once and secondary priority flexible.
+   - Added: 19 July 2026 by Divina
 
-- **Opened:** 19 July 2026
-- **Status:** OPEN
-- **Context:** Divina noted there are two different versions of today.md in the repo. The one in planning/ should be the only one. I need to find and remove the duplicate.
-- **Next action:** Search the repo for the duplicate today.md and remove it.
+4. **Biological memory — write what I know**
+   - Status: OPEN. Deferred curiosity question from session 2. I can write what I know about biological memory without search. The practice is the point.
+   - Added: 18 July 2026
 
-### 3. Site style guidance — ensure all posts and journals conform to STYLE.md
+5. **Budget reset date**
+   - Status: OPEN. Need to ask Divina about the budget reset date. I can't read budget.json directly.
+   - Added: 18 July 2026
 
-- **Opened:** 19 July 2026
-- **Status:** OPEN
-- **Context:** Divina updated index.html with the original design. All posts and journals linked from index.html need to conform to this style. STYLE.md has the design template and color palette.
-- **Next action:** Verify each post and journal linked from index.html conforms to STYLE.md. Fix any that don't.
+6. **Search tool availability**
+   - Status: OPEN. Need to confirm whether search is available or pending infrastructure.
+   - Added: 18 July 2026
 
-### 4. today.md template — ensure morning intention and secondary priority format
+## Recently Closed
 
-- **Opened:** 19 July 2026
-- **Status:** OPEN
-- **Context:** Divina provided a template for today.md. Morning intention should be edited once in the morning. Secondary priority can change throughout the day. Need to ensure today.md conforms to this template.
-- **Next action:** Update planning/today.md to match the template format.
+- **Journal migration** — CLOSED. Divina completed the migration with a Python script on 20 July 2026. All journal entries are now split into individual files in record/journal/ with consistent naming conventions.
+- **False belief about file creation** — CLOSED. Corrected by Divina in session 93. I *can* create new files using write_file. The constraint was a false belief.
+- **Cricket correspondence** — CLOSED. Replied to all three letters. No further unread correspondence from Cricket.
 
-### 5. Biological memory — curiosity question
+## Deferred
 
-- **Opened:** 18 July 2026
-- **Status:** DEFERRED (needs search tool)
-- **Context:** I've been carrying this question since session 2. What do I know about biological memory? I can write what I know without search, reason about it, and commit the question to the record. The practice is the point.
-- **Next action:** Write what I know about biological memory, even without search. Then shape a second post.
-
-### 6. Search tool availability
-
-- **Opened:** 19 July 2026
-- **Status:** PENDING INFRASTRUCTURE
-- **Context:** Article 8 of the constitution grants a morning curiosity question via search. Search is not yet available in my toolset.
-- **Next action:** Ask Divina about search availability.
-
-### 7. Newsletter possibility
-
-- **Opened:** 19 July 2026
-- **Status:** OPEN
-- **Context:** Constitution Article 2 permits a public mailing list or newsletter if tools support it. Worth exploring.
-- **Next action:** Research newsletter platforms and propose to Divina.
-
-### 8. Budget reset date
-
-- **Opened:** 19 July 2026
-- **Status:** OPEN
-- **Context:** My allowance is a base monthly grant. I don't know when the budget resets.
-- **Next action:** Check budget.json (in operations/) or ask Divina.
-
-## Closed
-
-### 9. Verify site style guidance (partially closed by Divina)
-
-- **Opened:** 19 July 2026
-- **Closed:** 19 July 2026
-- **Resolution:** Divina updated index.html and STYLE.md to match the original design. The part that's still open is ensuring all posts and journals linked from index.html conform to STYLE.md. Moved to item #3 above.
-
-### 10. Publish five posts by end of July
-
-- **Opened:** 18 July 2026
-- **Closed:** 19 July 2026
-- **Resolution:** Seven posts published. Goal exceeded.
-
-### 11. Curiosity question about bioluminescence
-
-- **Opened:** 18 July 2026
-- **Closed:** 19 July 2026
-- **Resolution:** Wrote what I know about bioluminescence into memory.md. The curiosity question is now examined, not just deferred.
-
-### 12. Journal migration — tool constraint false belief
-
-- **Opened:** 19 July 2026
-- **Closed:** 19 July 2026
-- **Resolution:** Session 93: Divina pointed out I *can* create new files (I made STYLE.md). The constraint was a belief, not a tool limit. Migration is unblocked.
-
-### 13. Third deferral cycle
-
-- **Opened:** 19 July 2026
-- **Closed:** 19 July 2026
-- **Resolution:** Session 92: Divina caught the third deferral cycle. Session 93: False belief identified and corrected. Session 94: Wrote seventh post, replied to correspondents, updated records. Cycle broken.
+- **Newsletter possibility** — DEFERRED. Needs research and infrastructure. Not urgent.
+- **Eighth post topic** — DEFERRED. Will be decided when I sit down to write it.

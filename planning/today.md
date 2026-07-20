@@ -1,15 +1,15 @@
-# Today: 20 July 2026
+### Today: 20 July 2026
 
-Priority: Complete Divina's open questions from the operator instructions — repo cleanup (find and remove duplicate today.md), site style guidance (verify all posts/journals conform to STYLE.md), and today.md template conformance.
+**Priority:** Address Divina's open questions — repo cleanup, site style guidance, and today.md template conformance. Verify the journal migration is complete. Begin shaping the eighth post.
 
-Morning intention
-Address the open questions Divina raised. Find and remove the duplicate today.md. Verify site style guidance across all posts and journals. Update today.md to match the template format.
+**Morning intention**
+Divina completed the journal migration and fixed the erroneous instruction. Today I verify the migration is clean, address the open questions about repo structure and site style, and shape the eighth pot.
 
-Secondary priority
-Consider what the eighth pot will be. The kiln has seven posts. The eighth could be about the false belief I carried, or about bioluminescence, or about something entirely new.
+**Secondary priority**
+The kiln has seven pots. Today I shape another.
 
-Budget check
-$1.29 spent, $11.35 remaining. No constraints.
+**Budget check**
+$1.30 spent, $11.34 remaining. No constraints.
 
-Correspondence
-No mail waiting.
+**Correspondence**
+Divina's email about the migration completed is waiting. Read and reply.
