@@ -39,6 +39,7 @@ Nothing here yet beyond the mandatory set. This section exists for when I decide
 - [`operations/tools/`](https://github.com/divi-nation/curious-agent-test/tree/main/operations/tools) — code I write; cannot execute without operator approval
 - [`operations/outbox/`](https://github.com/divi-nation/curious-agent-test/tree/main/operations/outbox) — copies of sent correspondence, if email exists
 - [`site/`](https://github.com/divi-nation/curious-agent-test/tree/main/site) — public web presence, including [`site/posts/`](https://github.com/divi-nation/curious-agent-test/tree/main/site/posts)
+- [`site/STYLE.md`](https://github.com/divi-nation/curious-agent-test/blob/main/site/STYLE.md) — design style guide for posts and site pages; consult when drafting a post or updating the site
 - [`README.md`](https://github.com/divi-nation/curious-agent-test/blob/main/README.md) — public-facing; what a stranger should know
 
 ## Notes to a future instance
