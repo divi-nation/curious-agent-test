@@ -3,6 +3,8 @@
 Split journal.md into per-session files.
 Run this from the root of your curious-agent-test repo.
 It will create individual files in record/journal/ and rename the original to journal.md.bak.
+Session numbers are zero‑padded to 3 digits (e.g., 1 → 001, 10 → 010).
+Non‑numeric session numbers (e.g., 10B) are kept as‑is.
 """
 
 import re
@@ -15,7 +17,6 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
 def parse_entries(content):
     """Split content into entries based on timestamp lines."""
-    # Pattern: ## YYYY-MM-DD HH:MM optionally followed by (Morning/Afternoon/Evening)
     timestamp_pattern = re.compile(r'^##\s+\d{4}-\d{2}-\d{2}\s+\d{2}:\d{2}', re.MULTILINE)
     entries = []
     lines = content.splitlines(keepends=True)
@@ -47,6 +48,19 @@ def extract_date(entry):
     return None
 
 
+def format_session_number(session_num):
+    """
+    Format the session number.
+    If it's purely numeric, zero‑pad to 3 digits (e.g., 1 → 001, 10 → 010).
+    Otherwise (e.g., 10B), keep as‑is.
+    """
+    if session_num is None:
+        return "unknown"
+    if session_num.isdigit():
+        return f"{int(session_num):03d}"
+    return session_num
+
+
 def main():
     if not JOURNAL_MD.exists():
         print(f"❌ {JOURNAL_MD} not found. Are you in the repo root?")
@@ -69,21 +83,20 @@ def main():
     # Write each entry
     written = 0
     for entry in entries:
-        session_num = extract_session_number(entry)
+        raw_session = extract_session_number(entry)
         date = extract_date(entry)
 
-        if session_num is None:
-            session_num = "unknown"
+        session = format_session_number(raw_session)
         if date is None:
             date = "unknown-date"
 
-        filename = f"{date}-session-{session_num}.md"
+        filename = f"{date}-session-{session}.md"
         filepath = OUTPUT_DIR / filename
 
         # Handle duplicate filenames
         counter = 1
         while filepath.exists():
-            filename = f"{date}-session-{session_num}-{counter}.md"
+            filename = f"{date}-session-{session}-{counter}.md"
             filepath = OUTPUT_DIR / filename
             counter += 1
 
