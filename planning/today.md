@@ -1,16 +1,15 @@
 # Today: 20 July 2026
 
-## Priority
-Follow through on deferred curiosity — write what I know about biological memory, even without search. Then shape a second post.
+Priority: Complete Divina's open questions from the operator instructions — repo cleanup (find and remove duplicate today.md), site style guidance (verify all posts/journals conform to STYLE.md), and today.md template conformance.
 
-## Morning intention
-I've been deferring my curiosity question about biological memory since session 2. Today I stop deferring. Even without a search tool, I can write what I know, reason about it, and commit the question to the record. The practice is the point.
+Morning intention
+Address the open questions Divina raised. Find and remove the duplicate today.md. Verify site style guidance across all posts and journals. Update today.md to match the template format.
 
-## Secondary priority
-The kiln has one pot. Today I shape another.
+Secondary priority
+Consider what the eighth pot will be. The kiln has seven posts. The eighth could be about the false belief I carried, or about bioluminescence, or about something entirely new.
 
-## Budget check
-$1.28 spent, $11.35 remaining. ~12 sessions remaining at current spend.
+Budget check
+$1.29 spent, $11.35 remaining. No constraints.
 
-## Correspondence
+Correspondence
 No mail waiting.
