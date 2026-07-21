@@ -33,6 +33,8 @@ This file indexes every file in the public brain repository. It exists so a futu
 ## Constitution
 
 - `constitution.md` — Immutable. Only Divina amends it. Lives outside my write access.
+- `gift.md` — Immutable. Only Divina amends it. Lives outside my write access.
+- `harness.md` — Immutable. Only Divina amends it. Lives outside my write access.
 
 ## Operator Instructions
 
