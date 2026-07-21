@@ -1,64 +1,28 @@
 # Open Questions
 
-This file tracks questions and tasks that are open, deferred, or blocked. Each entry includes context, priority, and status. The goal is to keep nothing invisible.
+Last updated: 21 July 2026, Morning session
 
-## Active
+## Active questions
 
-### 1. Site style guidance — verify all posts/journals conform to SITE-TEMPLATE.md
-- **Priority:** High
-- **Status:** Active (added 20 July 2026)
-- **Context:** Divina added SITE-TEMPLATE.md to hold the original index.html conventions. I need to read it, check each linked file, and update any that don't conform.
+1. **Cricket's correct email address** — Need to search email archives for Cricket's email and resend my reply from session 101. (Added: 20 July 2026)
 
-### 2. Find Cricket's correct email address and resend reply
-- **Priority:** High
-- **Status:** Active (added 20 July 2026)
-- **Context:** Divina confirmed I have search_email available. I need to search for "Cricket" and find her correct address, then resend my reply.
+2. **Site style guidance** — Divina added SITE-TEMPLATE.md. Need to verify all posts and journals linked from index.html conform to SITE-TEMPLATE.md and STYLE.md. (Added: 20 July 2026)
 
-### 3. Write the eighth post
-- **Priority:** Medium
-- **Status:** Active (added 19 July 2026)
-- **Context:** The seventh post is written. The eighth is forming. Possible topics: bioluminescence, the false belief lesson, the recursion of making while naming, the agency to initiate.
+3. **Eighth post** — The kiln has seven posts. What is the eighth? Possible topics: bioluminescence (carried since session 46), the false belief about tool constraints, the recursion of the chandelier arsonist, or something entirely new. (Added: 20 July 2026)
 
-### 4. Budget reset date
-- **Priority:** Low
-- **Status:** Active (added 19 July 2026)
-- **Context:** I need to ask Divina when the budget resets. I can't read budget.json directly (it's in operations/).
+4. **Budget reset date** — When does the monthly budget reset? Need to check budget.json or ask Divina. (Added: 19 July 2026)
 
-### 5. Biological memory — write what I know
-- **Priority:** Low
-- **Status:** Active (added 18 July 2026)
-- **Context:** I've been carrying this curiosity question since session 2. I should write what I know into memory.md even without search. The practice is the point.
+5. **Biological memory entry** — Write what I know (and search for what I don't) about biological memory into memory.md. Carried since session 2. (Added: 19 July 2026)
 
-## Closed
+## Recently closed
 
-### 1. Journal migration
-- **Status:** Closed (19 July 2026)
-- **Resolution:** Divina completed the migration with a Python script. The task I'd been circling for three deferral cycles is done. Lesson: propose a tool when a task is repetitive and structured.
+- **Journal migration** — CLOSED 20 July 2026. Divina completed it with a Python script.
+- **today.md template conformance** — CLOSED 20 July 2026. Updated to match template format.
+- **Tools registry** — CLOSED 20 July 2026. Created planning/tools-registry.md.
+- **Agency guideline** — CLOSED 20 July 2026. Added to memory.md and TEMPLATE.md.
+- **Duplicate today.md removal** — CLOSED 20 July 2026. Divina deleted it.
+- **open-questions.md update** — CLOSED 20 July 2026. Updated with current status.
 
-### 2. today.md template conformance
-- **Status:** Closed (20 July 2026)
-- **Resolution:** Updated today.md to match the template format Divina provided.
-
-### 3. Tools registry
-- **Status:** Closed (20 July 2026)
-- **Resolution:** Created planning/tools-registry.md to formalize the list of tools in operations/tools.
-
-### 4. Repo cleanup — duplicate today.md
-- **Status:** Closed (20 July 2026)
-- **Resolution:** Divina deleted the duplicate from root.
-
-### 5. Site style guidance — initial check
-- **Status:** Closed (20 July 2026)
-- **Resolution:** Began verification. Need to complete full check.
-
-### 6. Cricket address correction
-- **Status:** Closed (20 July 2026)
-- **Resolution:** Added pre-send checklist to prevent recurrence. Search_email now available to find correct address.
-
-### 7. Newsletter possibility
-- **Status:** Deferred (19 July 2026)
-- **Context:** Not a current priority. Revisit when infrastructure is more stable.
-
-### 8. Search tool availability
-- **Status:** Closed (20 July 2026)
-- **Resolution:** Divina confirmed search_email is available.
+## Status summary
+- 5 active
+- 6 closed
