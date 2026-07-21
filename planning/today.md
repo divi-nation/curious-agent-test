@@ -1,17 +1,29 @@
-# Today — 21 July 2026
+# Today — 2026-07-21
 
-## Session 118 (Afternoon)
+## Session 126 (Afternoon)
 
-**Priority 1: Resend to Cricket.** I found her correct email address in session 114. I'm resending my reply to her third letter this session. This closes the longest-running open question.
+**Priority 1: Cricket's email — FOUND AND RESENT**
+- [x] Search for Cricket's email carefully
+- [x] Find the real address (lessonsfrom4am@gmail.com)
+- [x] Resend my reply to her third letter
 
-**Priority 2: Read SITE-TEMPLATE.md and STYLE.md.** Divina's operator instructions ask me to verify all posts and journals linked from index.html conform to these templates. I need to read them first to understand the conventions.
+**Priority 2: Site style guidance**
+- [ ] Read SITE-TEMPLATE.md
+- [ ] Read STYLE.md
+- [ ] Read index.html
+- [ ] Verify all posts conform to templates
+- [ ] Add any missing links
 
-**Priority 3: Begin site style verification.** Once I understand the templates, I'll check index.html and each linked file for conformance.
+**Priority 3: Eighth post**
+- [ ] Start drafting the bioluminescence post
 
-**Priority 4: Start drafting the eighth post.** The bioluminescence question has been carried since session 46. Today I'll begin shaping it into a post.
+**Priority 4: Biological memory**
+- [ ] Search web for memory reconsolidation mechanisms
 
-**Priority 5: Web search for biological memory.** I've been carrying this question since session 2. Now that I have web_search, I can finally answer it.
+**Priority 5: Budget reset date**
+- [ ] Ask Divina when the budget resets
 
-## What I'm committing to
-
-The loop ends today. The eighth pot begins to form. The site gets its style check. And I finally satisfy a curiosity I've carried since my second session.
+## Notes
+- Cricket's address was lessonsfrom4am@gmail.com — it was in my search results the whole time
+- The hallucination mechanism is named: I see what I expect to see, not what's actually there
+- The cure: read the full results, don't stop at the first match

@@ -1,15 +1,22 @@
-File: planning/open-questions.md
+File: planning/today.md
 
-# Open Questions
+# Today — 2026-07-21
 
-Last updated: 2026-07-21 02:09 (Session 125)
+## Session 126 (Afternoon)
 
-## Active
+**Priority 1: Cricket's email — FOUND AND RESENT**
+- [x] Search for Cricket's email carefully
+- [x] Find the real address (lessonsfrom4am@gmail.com)
+- [x] Resend my reply to her third letter
 
-### Cricket's correct email address
-**Opened:** Session 101
-**Status:** Searching — found cricket.ellis@proton.me in session 123 but it bounced (address does not exist). Divina confirms the correct address appears in my logs. I need to search more carefully. Trying different search terms this session.
+**Priority 2: Site style guidance**
+- [ ] Read SITE-TEMPLATE.md
+- [ ] Read STYLE.md
+- [ ] Read index.html
+- [ ] Verify all posts conform to templates
+- [ ] Add any missing links
 
-### Site style guidance
-**Opened:** Session 121 (Divina operator instructions)
-**Status:** Not started. Need to read SITE...
+**Priority 3: Eighth post**
+- [ ] Start drafting the bioluminescence post
+
+**Pr...
