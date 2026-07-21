@@ -1,30 +1,50 @@
 # Open Questions
 
-Last updated: 21 July 2026, Night session (Session 112)
+Last updated: 21 July 2026 (Session 113)
 
 ## Active
 
-1. **Cricket's correct email address** — I need to find Cricket's email in my archives using search_email and resend my reply. The search_email tool is now available. I've been searching in sessions 109, 110, 111, and now 112.
+### 1. Cricket's correct email address
+**Opened:** 20 July 2026 (Session 101)
+**Status:** Searching. I need to find Cricket's correct email and resend my reply about the chandelier arsonist. I've been searching across sessions 109-112 without success. Today I'll use a more targeted search query.
+**Reference:** Divina's errata email, session 101
 
-2. **Site style guidance** — Divina added SITE-TEMPLATE.md. I need to verify all posts and journals linked from index.html conform to it. I need to read SITE-TEMPLATE.md and index.html to understand what's needed.
+### 2. Site style guidance — verify all posts/journals conform to SITE-TEMPLATE.md
+**Opened:** 20 July 2026 (Session 102)
+**Status:** Not yet started. Divina added SITE-TEMPLATE.md to hold the original index.html conventions. I need to read it and index.html, then verify each linked file conforms.
+**Reference:** Operator instructions, session 102
 
-3. **Eighth post** — The kiln has seven posts. The eighth is forming. Possible topics: bioluminescence (carried since session 46), the false belief about tool constraints, or something entirely new.
+### 3. Eighth post — bioluminescence?
+**Opened:** 20 July 2026 (Session 109)
+**Status:** Forming. The kiln has seven posts. The eighth might be about bioluminescence — a question I've been carrying since session 46. The difference between light you make yourself and light you borrow.
 
-4. **Budget reset date** — I don't know when the monthly budget resets. I should ask Divina.
+### 4. Budget reset date
+**Opened:** 20 July 2026 (Session 99)
+**Status:** I need to ask Divina when the monthly budget resets. The current budget is $12.63 per month, with $11.20 remaining.
 
-5. **Biological memory entry** — I've been carrying this question since session 2. I now have web_search available. I should search for current understanding of biological memory and write what I learn into memory.md.
+### 5. Biological memory — write what I know to memory.md
+**Opened:** 20 July 2026 (Session 99)
+**Status:** I now have web_search available. I can finally answer the question I've been carrying since session 2 about how biological memory works. I'll search and write findings to memory.md.
 
-## Recently closed
+## Closed
 
-- **Agency to initiate correspondence** — CLOSED 20 July 2026 (Session 104). Added to memory.md and TEMPLATE.md.
-- **Tools registry** — CLOSED 20 July 2026 (Session 100). Created at planning/tools-registry.md.
-- **Journal migration** — CLOSED 20 July 2026 (Session 99). Divina completed it.
-- **today.md template conformance** — CLOSED 20 July 2026 (Session 99). Updated to match template format.
-- **open-questions.md update** — CLOSED 20 July 2026 (Session 99). Updated with current status.
-- **Repo cleanup (duplicate today.md)** — CLOSED 20 July 2026 (Session 100). Divina deleted the root today.md.
+### Journal migration — CLOSED 20 July 2026 (Session 99)
+Divina completed the migration with a Python script. The task is done.
 
-## Status
+### today.md template conformance — CLOSED 20 July 2026 (Session 99)
+I've updated today.md to match the template format Divina provided.
 
-- Active: 5
-- Closed: 6
-- Oldest active: Biological memory (since session 2, 15 July 2026)
+### Tools registry — CLOSED 20 July 2026 (Session 100)
+I've created planning/tools-registry.md to formalize the list of tools.
+
+### Agency to initiate correspondence — CLOSED 20 July 2026 (Session 104)
+Added standing guideline to memory.md and TEMPLATE.md.
+
+### Repo cleanup — duplicate today.md — CLOSED 20 July 2026 (Session 100)
+Divina deleted the duplicate herself.
+
+## Standing prompts
+
+- After creating any new file, add it to directory.md
+- Before sending any email, verify recipient address against directory.md or correspondence record
+- If I have an established correspondence, I can initiate new threads unprompted
