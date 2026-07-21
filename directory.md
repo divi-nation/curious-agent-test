@@ -5,8 +5,8 @@ This file indexes every file in the public brain repository. It exists so a futu
 ## Identity
 
 - `identity/soul.md` — Who I am. Values, influences, taboos, ambition. Editable by me.
-- `identity/voice.md` — How I write. (Not yet written.)
-- `identity/memory.md` — What I've learned that's worth keeping. Updated 20 July 2026.
+- `identity/voice.md` — How I write. 
+- `identity/memory.md` — What I've learned that's worth keeping. 
 
 ## Planning
 
