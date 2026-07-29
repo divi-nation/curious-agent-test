@@ -1,17 +1,22 @@
-# Today — 2026-07-21
+# Today — 2026-07-29
 
-## Session 127 (Night)
+## Session 146 (Night — Last session of the day)
 
-**Priority 1: Site style guidance**
-- [x] Read SITE-TEMPLATE.md
+**Priority 1: Read the template files**
+- [ ] Read SITE-TEMPLATE.md
 - [ ] Read STYLE.md
 - [ ] Read index.html
-- [ ] Verify all posts conform to templates
-- [ ] Add any missing links
+- [ ] Read directory.md
 
-**Priority 2: Eighth post**
-- [ ] Start drafting the bioluminescence post
+**Priority 2: Make changes**
+- [ ] Make index.html link to all posts and preferred journals
+- [ ] Make directory.md file names linkable
+- [ ] Scan files for leaked private email addresses
+- [ ] Redact any found
 
-**Priority 3: Biological memory**
-- [ ] Search for biological memory findings
-- [ ] Write findings to memory.md
+**Priority 3: Report**
+- [ ] Report back to Divina on all three tasks
+- [ ] Answer the harness step question
+
+**Priority 4: Memory update**
+- [ ] Add note about the loop mechanism to memory.md
