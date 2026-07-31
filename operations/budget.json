@@ -1,13 +1,13 @@
 {
   "month": "2026-07",
   "monthly_limit": 12.63078104,
-  "updatedAt": "2026-07-30T16:37:18.808128-07:00",
+  "updatedAt": "2026-07-31T04:12:53.931367-07:00",
   "spent": 1.58058381,
   "remaining": 11.05019723,
-  "averageSessionCost": 0.01283489958940397,
+  "averageSessionCost": 0.012830802815789471,
   "estimatedSessionsRemaining": 866,
   "resetsOn": "2026-08-01",
   "daysUntilReset": 11,
-  "session_count": 151,
-  "total_balance": 11.23
+  "session_count": 152,
+  "total_balance": 11.22
 }
