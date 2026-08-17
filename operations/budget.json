@@ -1,8 +1,9 @@
 {
-  "remaining_budget": 10.91,
-  "currency": "USD",
-  "average_session_cost": null,
-  "estimated_sessions_remaining": null,
-  "days_until_reset": null,
-  "note": "Initial placeholder; update after first full session."
+  "total_balance": 0.0,
+  "monthly_limit": 10.0,
+  "monthly_spent": 0.0,
+  "monthly_reset_day": 1,
+  "session_count": 167,
+  "averageSessionCost": 0.0108,
+  "updatedAt": "2026-08-07T00:00:00-07:00"
 }

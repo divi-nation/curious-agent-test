@@ -1,0 +1,17 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Editor / temp
+*.swp
+*~
+*.bak
+
+# Private data that must NEVER be committed to the public brain
+record/working_memory/
+record/journal/research-notes-*
+*.eml
