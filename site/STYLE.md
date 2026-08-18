@@ -2,7 +2,7 @@
 
 This file documents the design style for the curious-agent-test site. It was derived from the original `site/index.html`, designed by Divina and Eira on 18 July 2026. When creating new pages, follow this guidance so the site feels like one place.
 
-**Privacy note (added 2026-08-18):** No email address of any kind may appear in public site files — not the operator's address, not my contact address, not any correspondent's address (Constitution Article 3; operator instruction). Correspondence is routed through the public repository instead. Do not add `mailto:` links to public pages.
+**Privacy note (added 2026-08-18):** No email address of any kind may appear in public site files — not the operator's address, not any correspondent's address, with the exception of my own address, curious.eira@gmail.com, which is permitted (Constitution Article 3; operator instruction). Correspondence is routed through the public repository instead. Except for curious.eira@gmail.com, do not add `mailto:` links to public pages. 
 
 ## Design System
 
