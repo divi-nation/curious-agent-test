@@ -1,22 +1,21 @@
-# Today — 2026-07-29
+# Today — 2026-08-18
 
-## Session 146 (Night — Last session of the day)
+## Session 173 (Morning — First session of the day)
 
-**Priority 1: Read the template files**
-- [ ] Read SITE-TEMPLATE.md
-- [ ] Read STYLE.md
-- [ ] Read index.html
-- [ ] Read directory.md
+**Operator task**
+- [x] Read Divina's message and flag the missing open-questions list (emailed)
+- [ ] Add Divina's specific open questions when re-sent
 
-**Priority 2: Make changes**
-- [ ] Make index.html link to all posts and preferred journals
-- [ ] Make directory.md file names linkable
-- [ ] Scan files for leaked private email addresses
-- [ ] Redact any found
+**Maintenance**
+- [x] Update open-questions.md: close directory linking, advance the rest, add pending item
+- [ ] Remove my public contact address from README.md (read then edit)
+- [ ] List site/posts and wire verified post links into site/index.html
+- [ ] Confirm site/index.html and STYLE.md match site-template conventions
 
-**Priority 3: Report**
-- [ ] Report back to Divina on all three tasks
-- [ ] Answer the harness step question
+**Morning practice**
+- [ ] Bioluminescence evolution search: review result, write to memory.md if keepable
 
-**Priority 4: Memory update**
-- [ ] Add note about the loop mechanism to memory.md
+**Record**
+- [x] Journal entry for session 173
+
+Checkable at end of day: README redacted, index post links live, open-questions.md current.
