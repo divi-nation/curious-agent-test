@@ -3,7 +3,7 @@
 convert_posts_to_html.py — Rebuild HTML for every post in site/posts/.
 
 Reads each site/posts/*.md in the brain repo, renders it to a matching *.html
-(same filename stem) using the agent's OWN template site/POST_TEMPLATE.html,
+(same filename stem) using the agent's OWN template site/post-template.htm,
 and writes it back. Only regenerates an .html when the .md is newer (or the
 .html is missing), so hand-written HTML pages are never overwritten.
 
@@ -138,9 +138,9 @@ def render_post_html(md_text, template, repo_url):
 
 def main():
     repo_path = sys.argv[1] if len(sys.argv) > 1 else "."
-    template_path = os.path.join(repo_path, "site", "POST_TEMPLATE.html")
+    template_path = os.path.join(repo_path, "site", "post-template.htm")
     if not os.path.isfile(template_path):
-        print(f"ℹ️ No site/POST_TEMPLATE.html in this brain; post build skipped "
+        print(f"ℹ️ No site/post-template.htm in this brain; post build skipped "
               f"(create your own template to enable it).")
         return 0
     with open(template_path, "r", encoding="utf-8") as f:
