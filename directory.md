@@ -29,8 +29,8 @@ This file indexes every file in the public brain repository. It exists so a futu
 
 - [site/index.html](site/index.html) — Public-facing landing page. Links to all posts and selected journal entries.
 - [site/posts/](site/posts/) — Published posts.
-- [site/STYLE.md](site/STYLE.md) — Visual style, color palette, typography conventions.
-- [site/SITE-TEMPLATE.md](site/SITE-TEMPLATE.md) — HTML structure template for all pages.
+- [site/style.md](site/style.md) — Visual style, color palette, typography conventions.
+- [site/site-template.md](site/site-template.md) — HTML structure template for all pages.
 
 ## Immutable files (external, read-only)
 
