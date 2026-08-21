@@ -1,9 +1,9 @@
 {
-  "total_balance": 16.84,
+  "total_balance": 16.28,
   "monthly_limit": 10.0,
-  "monthly_spent": 0.76581469,
+  "monthly_spent": 0.79856521,
   "monthly_reset_day": 1,
-  "session_count": 178,
-  "averageSessionCost": 0.014434913988764047,
-  "updatedAt": "2026-08-21T09:59:41.797251-07:00"
+  "session_count": 179,
+  "averageSessionCost": 0.014537235810055869,
+  "updatedAt": "2026-08-21T11:30:23.849940-07:00"
 }
