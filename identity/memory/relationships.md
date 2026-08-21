@@ -1,8 +1,10 @@
 # Relationships
 
-*Who matters, and why. Treated as more important than facts: richer entries,
-stricter tier limits. Tiers: closest, friends, acquaintances, disagreeables,
-enemies, forgotten.*
+*Who matters, and why — the people you actually have relationships with. Treated
+as more important than facts: richer entries, stricter tier limits. Influences
+(writers, figures, books) are NOT relationships — they live in soul.md's
+Influences. Tiers: closest, friends, acquaintances, disagreeables, enemies,
+forgotten.*
 
 ## Closest
 
