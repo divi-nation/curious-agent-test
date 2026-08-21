@@ -8,16 +8,20 @@ Deterministic jobs (the agent never hand-writes HTML):
    stem) using the agent's OWN template `site/post-template.html`. Only
    regenerates an .html when the .md is newer (or the .html is missing).
 
-2. Regenerates `site/index.html`'s Posts and Journal sections between the
+2. Renders every `record/journal/*.md` into `site/journal/<stem>.html` using
+   the same post template (write-if-changed, so a redaction to a source .md
+   propagates to its rendered page on the next run). GitHub Pages serves the
+   site from `site/`, so journal pages must live under `site/` to be linkable.
+
+3. Regenerates `site/index.html`'s Posts and Journal sections between the
    marker comments:
        <!-- POSTS:START --> ... <!-- POSTS:END -->
        <!-- JOURNAL:START --> ... <!-- JOURNAL:END -->
    - Posts: every `site/posts/*.md` becomes one card (title + date).
-   - Journal: the SINGLE most recent `record/journal/*.md` becomes one card
-     with a relative timestamp ("posted 33 min ago"), plus a "See all
-     journals" link.
+   - Journal: the SINGLE most recent journal becomes one card with a relative
+     timestamp ("posted 33 min ago"), plus a "See all journals" link.
 
-3. Generates `site/journal.html` (the full archive, newest first) from the
+4. Generates `site/journal.html` (the full archive, newest first) from the
    agent's OWN template `site/journal-template.html`.
 
 Placeholders in the post template: {{TITLE}} {{DATE}} {{CONTENT}} {{REPO_URL}} {{YEAR}}.
@@ -41,6 +45,7 @@ AGENT_TZ = ZoneInfo("America/Los_Angeles")
 POSTS_MARKERS = ("<!-- POSTS:START -->", "<!-- POSTS:END -->")
 JOURNAL_MARKERS = ("<!-- JOURNAL:START -->", "<!-- JOURNAL:END -->")
 JOURNAL_DIR = "record/journal"
+JOURNAL_OUT_DIR = "site/journal"
 
 
 def html_escape(s):
@@ -227,6 +232,16 @@ def journal_session(name):
     return m.group(1) if m else ""
 
 
+def journal_date_label(name):
+    """Human date label for a journal, e.g. '2026-08-21 09:59 · Session 178'."""
+    dt = journal_timestamp(name)
+    date = dt.strftime("%Y-%m-%d %H:%M") if dt else ""
+    sess = journal_session(name)
+    if date and sess:
+        return f"{date} · Session {sess}"
+    return date or (f"Session {sess}" if sess else "")
+
+
 def first_heading_from_file(path):
     """First Markdown heading in a file's opening lines, or ''."""
     try:
@@ -242,17 +257,58 @@ def first_heading_from_file(path):
     return ""
 
 
+def render_journal_entries(repo_path):
+    """Render every record/journal/*.md into site/journal/<stem>.html using the
+    post template. Write-if-changed (content compare) so it is deterministic and
+    a redaction to a source .md propagates to its rendered page next run."""
+    template_path = os.path.join(repo_path, "site", "post-template.html")
+    src_dir = os.path.join(repo_path, JOURNAL_DIR)
+    out_dir = os.path.join(repo_path, JOURNAL_OUT_DIR)
+    if not os.path.isfile(template_path) or not os.path.isdir(src_dir):
+        return
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = f.read()
+    repo_url = detect_repo_url(repo_path)
+    year = str(datetime.date.today().year)
+    os.makedirs(out_dir, exist_ok=True)
+    written = 0
+    for name in journal_files(repo_path):
+        src = os.path.join(src_dir, name)
+        dst = os.path.join(out_dir, name[:-3] + ".html")
+        with open(src, "r", encoding="utf-8") as f:
+            content = f.read()
+        title = first_heading(content) or name
+        html = (template
+                .replace("{{TITLE}}", html_escape(title))
+                .replace("{{DATE}}", html_escape(journal_date_label(name)))
+                .replace("{{CONTENT}}", md_to_html(content))
+                .replace("{{REPO_URL}}", html_escape(repo_url))
+                .replace("{{YEAR}}", year))
+        old = ""
+        if os.path.isfile(dst):
+            with open(dst, "r", encoding="utf-8") as f:
+                old = f.read()
+        if html != old:
+            with open(dst, "w", encoding="utf-8") as f:
+                f.write(html)
+            written += 1
+    if written:
+        print(f"✅ Rendered {written} journal page(s) into {JOURNAL_OUT_DIR}/.")
+    else:
+        print(f"ℹ️ All journal pages already up to date.")
+
+
 def journal_section_html(repo_path):
     """The index.html Journal section: the most recent entry plus a See-all link."""
     files = journal_files(repo_path)
     if not files:
         return empty_state("🌱", "No journal entries yet.")
     name = files[0]
-    rel = f"{JOURNAL_DIR}/{name}"
-    title = first_heading_from_file(os.path.join(repo_path, rel)) or name
+    href = f"journal/{name[:-3]}.html"
+    title = first_heading_from_file(os.path.join(repo_path, JOURNAL_DIR, name)) or name
     dt = journal_timestamp(name)
     lines = ['    <div class="entry">',
-             f'      <a href="../{rel}">{html_escape(title)}</a>']
+             f'      <a href="{href}">{html_escape(title)}</a>']
     if dt:
         iso = dt.isoformat()
         fallback = dt.strftime("%Y-%m-%d %H:%M")
@@ -269,13 +325,8 @@ def journal_archive_list_html(repo_path):
         return empty_state("🌱", "No journal entries yet.")
     cards = []
     for name in files:
-        rel = f"{JOURNAL_DIR}/{name}"
-        title = first_heading_from_file(os.path.join(repo_path, rel)) or name
-        dt = journal_timestamp(name)
-        date = dt.strftime("%Y-%m-%d %H:%M") if dt else ""
-        sess = journal_session(name)
-        meta = f"{date} · Session {sess}" if (date and sess) else (date or sess or "")
-        cards.append(entry_card(f"../{rel}", title, meta))
+        title = first_heading_from_file(os.path.join(repo_path, JOURNAL_DIR, name)) or name
+        cards.append(entry_card(f"journal/{name[:-3]}.html", title, journal_date_label(name)))
     return "\n".join(cards)
 
 
@@ -385,6 +436,7 @@ def main():
     else:
         print("ℹ️ No site/posts directory; nothing to convert.")
 
+    render_journal_entries(repo_path)
     rebuild_index(repo_path)
     build_archive_page(repo_path)
     return 0
