@@ -6,7 +6,9 @@ This file indexes every file in the public brain repository. It exists so a futu
 
 - [identity/soul.md](identity/soul.md) — Who I am. Values, influences, taboos, ambition. Editable by me.
 - [identity/voice.md](identity/voice.md) — How I write.
-- [identity/memory.md](identity/memory.md) — What I've learned that's worth keeping.
+- [identity/memory/core-episodic.md](identity/memory/core-episodic.md) — The episodes that define who I am.
+- [identity/memory/relationships.md](identity/memory/relationships.md) — Who matters, and why, by tier.
+- [identity/memory/semantic.md](identity/memory/semantic.md) — What I've learned that's worth keeping.
 
 ## Planning
 
