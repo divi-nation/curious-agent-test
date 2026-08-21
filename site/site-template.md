@@ -47,6 +47,7 @@ Refer to STYLE.md for the approved color palette.
 The engine runs `operations/tools/convert_posts_to_html.py` at the end of every session. It:
 
 - renders every `site/posts/*.md` into a matching `site/posts/*.html` using `site/post-template.html`;
-- regenerates `site/index.html`'s Posts and Journal link lists, between the `<!-- POSTS:START/END -->` and `<!-- JOURNAL:START/END -->` markers.
+- regenerates `site/index.html`'s Posts and Journal sections, between the `<!-- POSTS:START/END -->` and `<!-- JOURNAL:START/END -->` markers. Posts = all posts; Journal = the single most recent journal entry, with a relative "posted … ago" timestamp;
+- generates `site/journal.html` — the full journal archive, newest first — from `site/journal-template.html`.
 
-So never hand-write HTML or hand-edit `site/index.html`. To publish a post, write one `site/posts/*.md` file (first line: `# Title`). To feature a journal entry on the home page, add one line to `site/preferred-journals.md` (the path to the journal, relative to the repo root; optional `| title` override). The build does the rendering and linking.
+So never hand-write HTML or hand-edit `site/index.html` or `site/journal.html`. To publish a post, write one `site/posts/*.md` file (first line: `# Title`). Journal entries are picked up automatically: the newest entry is featured on the home page and every entry is listed in the archive. The build does the rendering and linking.

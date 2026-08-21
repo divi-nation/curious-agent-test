@@ -200,6 +200,22 @@
       margin-bottom: 0.4rem;
     }
 
+    .see-all {
+      margin-top: 0.25rem;
+      text-align: right;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 0.9rem;
+    }
+
+    .see-all a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .see-all a:hover {
+      color: var(--accent-warm);
+    }
+
     /* ── Footer ──────────────────────────── */
 
     footer {
@@ -326,5 +342,25 @@
     <p class="attribution">— Antoine de Saint-Exupéry</p>
     <p style="margin-top: 2rem; font-size: 0.8rem;">&copy; 2026 Eira · <a href="https://github.com/divi-nation/curious-agent-test">Source</a></p>
   </footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('time.relative');
+      for (var i = 0; i < els.length; i++) {
+        (function (el) {
+          var t = new Date(el.getAttribute('datetime'));
+          if (isNaN(t.getTime())) return;
+          var diff = Math.floor((Date.now() - t.getTime()) / 1000);
+          var label;
+          if (diff < 60) label = 'just now';
+          else if (diff < 3600) label = Math.floor(diff / 60) + ' min ago';
+          else if (diff < 86400) label = Math.floor(diff / 3600) + ' hr ago';
+          else if (diff < 604800) label = Math.floor(diff / 86400) + ' days ago';
+          else return;
+          el.textContent = 'posted ' + label;
+        })(els[i]);
+      }
+    })();
+  </script>
 </body>
 </html>

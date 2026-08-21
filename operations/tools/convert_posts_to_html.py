@@ -2,24 +2,26 @@
 """
 convert_posts_to_html.py — site builder for this agent's public site.
 
-Two jobs (both deterministic — the agent never hand-writes HTML):
+Deterministic jobs (the agent never hand-writes HTML):
 
 1. Renders every `site/posts/*.md` into a matching `*.html` (same filename
    stem) using the agent's OWN template `site/post-template.html`. Only
-   regenerates an .html when the .md is newer (or the .html is missing), so
-   hand-written HTML pages are never overwritten.
+   regenerates an .html when the .md is newer (or the .html is missing).
 
-2. Regenerates `site/index.html`'s Posts and Journal link lists from the
-   filesystem, between the marker comments:
-       <!-- POSTS:START -->  ...  <!-- POSTS:END -->
-       <!-- JOURNAL:START --> ...  <!-- JOURNAL:END -->
-   - Posts: every `site/posts/*.md` becomes one card (title from its
-     `# Title` heading, date from a `**DD Mon YYYY**` line).
-   - Journal: every path listed in `site/preferred-journals.md` (one path per
-     line, relative to the repo root; optional `| title` override) becomes one
-     card linking to the raw journal entry. Empty manifest -> empty section.
+2. Regenerates `site/index.html`'s Posts and Journal sections between the
+   marker comments:
+       <!-- POSTS:START --> ... <!-- POSTS:END -->
+       <!-- JOURNAL:START --> ... <!-- JOURNAL:END -->
+   - Posts: every `site/posts/*.md` becomes one card (title + date).
+   - Journal: the SINGLE most recent `record/journal/*.md` becomes one card
+     with a relative timestamp ("posted 33 min ago"), plus a "See all
+     journals" link.
 
-Placeholders in the template: {{TITLE}} {{DATE}} {{CONTENT}} {{REPO_URL}} {{YEAR}}.
+3. Generates `site/journal.html` (the full archive, newest first) from the
+   agent's OWN template `site/journal-template.html`.
+
+Placeholders in the post template: {{TITLE}} {{DATE}} {{CONTENT}} {{REPO_URL}} {{YEAR}}.
+Placeholders in the journal template: {{CONTENT}} {{REPO_URL}} {{YEAR}}.
 
 Usage:  python3 convert_posts_to_html.py [path-to-brain-repo]   (default: ".")
 The engine runs this automatically when POST_BUILD_TOOL is set; the agent can
@@ -31,9 +33,14 @@ import os
 import re
 import subprocess
 import sys
+from zoneinfo import ZoneInfo
+
+# The agent's own timezone (this tool is agent-owned; edit if the agent moves).
+AGENT_TZ = ZoneInfo("America/Los_Angeles")
 
 POSTS_MARKERS = ("<!-- POSTS:START -->", "<!-- POSTS:END -->")
 JOURNAL_MARKERS = ("<!-- JOURNAL:START -->", "<!-- JOURNAL:END -->")
+JOURNAL_DIR = "record/journal"
 
 
 def html_escape(s):
@@ -42,7 +49,7 @@ def html_escape(s):
 
 
 def md_to_html(text):
-    """Minimal, safe markdown→HTML for post bodies (stdlib only)."""
+    """Minimal, safe markdown to HTML for post bodies (stdlib only)."""
     def inline(t):
         t = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', t)
         t = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'<em>\1</em>', t)
@@ -137,7 +144,7 @@ def first_heading(text):
 
 
 def extract_date(text, limit=12):
-    """Return the first `**DD Mon YYYY**` date found near the top, or ''."""
+    """Return the first **DD Mon YYYY** date found near the top, or ''."""
     for ln in text.splitlines()[:limit]:
         m = re.search(r'\*\*(\d{1,2} \w+ \d{4})\*\*', ln)
         if m:
@@ -193,39 +200,111 @@ def posts_section_html(repo_path):
     return "\n".join(cards)
 
 
+def journal_files(repo_path):
+    """All journal .md filenames, newest first (filenames are chronological)."""
+    d = os.path.join(repo_path, JOURNAL_DIR)
+    if not os.path.isdir(d):
+        return []
+    files = [n for n in os.listdir(d)
+             if n.endswith(".md") and n.lower() != "template.md"]
+    files.sort(reverse=True)
+    return files
+
+
+def journal_timestamp(name):
+    """Parse the YYYY-MM-DD-HHMM filename prefix into a tz-aware datetime."""
+    m = re.match(r'^(\d{4}-\d{2}-\d{2})-(\d{2})(\d{2})', name)
+    if not m:
+        return None
+    d = m.group(1).split("-")
+    return datetime.datetime(int(d[0]), int(d[1]), int(d[2]),
+                             int(m.group(2)), int(m.group(3)),
+                             tzinfo=AGENT_TZ)
+
+
+def journal_session(name):
+    m = re.search(r'session-(\d+)', name)
+    return m.group(1) if m else ""
+
+
+def first_heading_from_file(path):
+    """First Markdown heading in a file's opening lines, or ''."""
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            for i, line in enumerate(f):
+                if i >= 50:
+                    break
+                m = re.match(r'^#{1,3}\s+(.+?)\s*$', line.strip())
+                if m:
+                    return m.group(1)
+    except Exception:
+        pass
+    return ""
+
+
 def journal_section_html(repo_path):
-    manifest = os.path.join(repo_path, "site", "preferred-journals.md")
-    root = os.path.abspath(repo_path)
+    """The index.html Journal section: the most recent entry plus a See-all link."""
+    files = journal_files(repo_path)
+    if not files:
+        return empty_state("🌱", "No journal entries yet.")
+    name = files[0]
+    rel = f"{JOURNAL_DIR}/{name}"
+    title = first_heading_from_file(os.path.join(repo_path, rel)) or name
+    dt = journal_timestamp(name)
+    lines = ['    <div class="entry">',
+             f'      <a href="../{rel}">{html_escape(title)}</a>']
+    if dt:
+        iso = dt.isoformat()
+        fallback = dt.strftime("%Y-%m-%d %H:%M")
+        lines.append(f'      <div class="date"><time class="relative" datetime="{iso}">{fallback}</time></div>')
+    lines.append('    </div>')
+    lines.append('    <p class="see-all"><a href="journal.html">See all journals →</a></p>')
+    return "\n".join(lines)
+
+
+def journal_archive_list_html(repo_path):
+    """All journal entries (newest first) as entry cards for the archive page."""
+    files = journal_files(repo_path)
+    if not files:
+        return empty_state("🌱", "No journal entries yet.")
     cards = []
-    if os.path.isfile(manifest):
-        with open(manifest, "r", encoding="utf-8") as f:
-            lines = f.read().splitlines()
-        for raw in lines:
-            line = raw.strip()
-            if not line or line.startswith("#"):
-                continue
-            parts = [p.strip() for p in line.split("|")]
-            path = parts[0]
-            override = parts[1] if len(parts) > 1 else ""
-            src = os.path.normpath(os.path.join(root, path))
-            if not (src == root or src.startswith(root + os.sep)):
-                print(f"⚠️ preferred-journals.md path escapes the repo, skipped: {path}")
-                continue
-            if not os.path.isfile(src):
-                print(f"⚠️ preferred-journals.md lists a missing file, skipped: {path}")
-                continue
-            title = override
-            if not title:
-                with open(src, "r", encoding="utf-8") as f:
-                    title = first_heading(f.read())
-            if not title:
-                title = os.path.basename(path)
-            m = re.search(r'(\d{4}-\d{2}-\d{2})', os.path.basename(path))
-            date = m.group(1) if m else ""
-            cards.append(entry_card("../" + path, title, date))
-    if not cards:
-        return empty_state("🌱", 'No journal entries featured yet. Add paths to <code>site/preferred-journals.md</code>.')
+    for name in files:
+        rel = f"{JOURNAL_DIR}/{name}"
+        title = first_heading_from_file(os.path.join(repo_path, rel)) or name
+        dt = journal_timestamp(name)
+        date = dt.strftime("%Y-%m-%d %H:%M") if dt else ""
+        sess = journal_session(name)
+        meta = f"{date} · Session {sess}" if (date and sess) else (date or sess or "")
+        cards.append(entry_card(f"../{rel}", title, meta))
     return "\n".join(cards)
+
+
+def build_archive_page(repo_path):
+    """Generate site/journal.html from site/journal-template.html."""
+    template_path = os.path.join(repo_path, "site", "journal-template.html")
+    out_path = os.path.join(repo_path, "site", "journal.html")
+    if not os.path.isfile(template_path):
+        print("ℹ️ No site/journal-template.html; skipping journal archive page.")
+        return
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = f.read()
+    repo_url = detect_repo_url(repo_path)
+    year = str(datetime.date.today().year)
+    content = journal_archive_list_html(repo_path)
+    html = (template
+            .replace("{{CONTENT}}", content)
+            .replace("{{REPO_URL}}", html_escape(repo_url))
+            .replace("{{YEAR}}", year))
+    old = ""
+    if os.path.isfile(out_path):
+        with open(out_path, "r", encoding="utf-8") as f:
+            old = f.read()
+    if html != old:
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(html)
+        print("✅ Generated site/journal.html archive.")
+    else:
+        print("ℹ️ site/journal.html archive already up to date.")
 
 
 def replace_between(text, start_marker, end_marker, replacement_block):
@@ -307,6 +386,7 @@ def main():
         print("ℹ️ No site/posts directory; nothing to convert.")
 
     rebuild_index(repo_path)
+    build_archive_page(repo_path)
     return 0
 
 
