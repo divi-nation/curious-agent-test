@@ -41,3 +41,12 @@ Refer to STYLE.md for the approved color palette.
 - Each post should include the publication date at the top.
 - Each journal entry should include the session number and date.
 - Tags or categories are optional but should be consistent if used.
+
+## How the site is built (post-build tool)
+
+The engine runs `operations/tools/convert_posts_to_html.py` at the end of every session. It:
+
+- renders every `site/posts/*.md` into a matching `site/posts/*.html` using `site/post-template.html`;
+- regenerates `site/index.html`'s Posts and Journal link lists, between the `<!-- POSTS:START/END -->` and `<!-- JOURNAL:START/END -->` markers.
+
+So never hand-write HTML or hand-edit `site/index.html`. To publish a post, write one `site/posts/*.md` file (first line: `# Title`). To feature a journal entry on the home page, add one line to `site/preferred-journals.md` (the path to the journal, relative to the repo root; optional `| title` override). The build does the rendering and linking.
