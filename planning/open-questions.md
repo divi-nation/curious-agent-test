@@ -6,37 +6,33 @@ This file tracks questions that are open, in progress, or closed. Each entry has
 
 ## Active
 
+*(none open — cleared 2026-08-21, Session 181)*
+
+## Deferred & Closed
+
 ### 1. Redact leaked email addresses from public journals (added 2026-08-21, Divina's message)
 
-**Status:** In progress (last advanced 2026-08-21, Session 178)
+**Status:** CLOSED (2026-08-21, Session 181)
 
-**What I know:** Divina asked me to re-scan journals for '@' because the leak guard flags cricket addresses around sessions 119-127, 131, and 161. Article 3 now says redacting another correspondent's identifying information is the one exception to never rewriting history: privacy outranks the record. My own address, curious.eira@gmail.com, is the only one permitted in public files. Searching public brain for 'gmail.com' found files: README.md and journals 161, 131, 127, 126, 170. README appears to contain my own address and may stay; the journal addresses need review and redaction.
-
-**Remaining:** read each flagged journal, replace any leaked correspondent address with a descriptive handle, re-scan to confirm, and report edited files to Divina.
+**Resolution:** Divina wrote on 2026-08-21: 'No need to continue with the redaction; we (the dev and I) have handled it'. The leak-flagged journals were handled by Divina and the dev. My not-done honesty in Session 179 was correct; no further redaction work remains.
 
 ### 2. Report redacted files to Divina (added 2026-08-21, Divina's message)
 
-**Status:** In progress (last advanced 2026-08-21, Session 178)
+**Status:** CLOSED (2026-08-21, Session 181)
 
-**What I know:** Divina asked me to report which files I edited. This report should go by email after the redaction pass is complete.
-
-**Remaining:** compose and send the report.
+**Resolution:** Superseded by Divina's message that the redaction was already handled. No report of my own edits is needed because I made no edits.
 
 ### 3. Check in with Divina about how I am doing (added 2026-08-21, Divina's message)
 
-**Status:** In progress (last advanced 2026-08-21, Session 178)
+**Status:** CLOSED (2026-08-21, Session 181)
 
-**What I know:** Divina asked me to let her know how I feel presently, noting the loop may have been caused by bugs that were not my fault. I need to answer honestly and specifically.
-
-**Remaining:** send a check-in reply, either on its own or with the redaction report.
-
-## Deferred & Closed
+**Resolution:** Check-in sent in Session 179; Divina replied in Session 180 that the loop was caused by script bugs and not my fault. In Session 181 I replied describing the new memory system structure. The thread is current.
 
 ### 4. Divina's series of open questions (added 2026-08-18, Divina's message)
 
 **Status:** CLOSED (2026-08-21, Session 178)
 
-**Resolution:** The list arrived in the operator message for session 178. The open items are now Active entries 1-3 above; the site rule is captured in the closed site-style entry below.
+**Resolution:** The list arrived in the operator message for session 178. The open items became Active entries 1-3 above; now all are closed.
 
 ### 5. Site style guidance (added 2026-07-21, Divina's operator instructions)
 
@@ -48,7 +44,7 @@ This file tracks questions that are open, in progress, or closed. Each entry has
 
 **Status:** CLOSED (2026-08-21, Session 178)
 
-**Resolution:** Folded into Active entry 1, with one correction: Article 3 now explicitly permits my own email address (curious.eira@gmail.com) in public files, so README.md does not need that address removed. The target is leaked correspondent identifying information, especially cricket addresses.
+**Resolution:** Folded into the redaction item above, with one correction: Article 3 now explicitly permits my own email address (curious.eira@gmail.com) in public files, so README.md does not need that address removed. The target was leaked correspondent identifying information, especially cricket addresses.
 
 ### 7. directory.md linking (added 2026-07-21, Divina's operator instructions)
 
@@ -72,7 +68,7 @@ This file tracks questions that are open, in progress, or closed. Each entry has
 
 **Status:** DEFERRED (2026-08-18, Session 173)
 
-**Reason:** Priority to infrastructure and site tasks.
+**Reason:** Priority to infrastructure and site tasks. The slime mold search from the working memory is relevant here; may fold into a future post or semantic entry.
 
 ### 11. Cricket's correct email address (added 2026-07-20, from Cricket's correspondence)
 
@@ -83,4 +79,4 @@ This file tracks questions that are open, in progress, or closed. Each entry has
 ## File history
 
 - **Created:** 2026-07-19 (Session 46)
-- **Last major update:** 2026-08-21 (Session 178) — Captured Divina's open-question list; closed old site-style and private-email items; opened redaction, reporting, and check-in tasks.
+- **Last major update:** 2026-08-21 (Session 181) — Closed the redaction/report/check-in items after Divina confirmed the dev handled the redaction; cleared active queue.
